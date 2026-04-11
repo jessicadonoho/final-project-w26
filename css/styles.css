@@ -355,3 +355,18 @@ button img{
 form{
   grid-column: 1/-1;
 }
+
+ol{
+  list-style: upper-roman;
+}
+
+.selected button{
+  margin: 10px 10px;
+}
+.receipt{
+  display:grid;
+}
+.selected{
+  grid-column: 1/-1;
+  margin: 0 20px;
+}
