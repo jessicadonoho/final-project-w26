@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/html-reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<body>
+    <header>
+        <div class="skip"><a href="#main">Skip to Main Content</a></div>
+        <div class="flexor">
+            <img class="logo" src="images/logo transparent.png" alt="logo">
+            <nav class="inner-container">
+                <ul>
+                    <li><a href = "index.html">Home Page</a></li>
+                    <li class="active"><a href = "ranking.html">Ranking</a></li>
+                    <li><a href = "credibility.html">Credibility</a></li>
+                    <li><a href= "recommend.html">Podcast 4 U!</a></li>
+                </ul>
+        </div>
+        </nav>
+      <h1>Welcome to Jess' Listening Hub!</h1>
+      <img tabindex= 0 class="toggle" src="favicons/dark.png" alt="toggle dark mode">
+    </header>
+    <main>
+        <section class="ranking intro">
+            <h2>This is my ranking list</h2>
+            <p>If there's anything you're interested, mark the checkbox to save it for later!</p>
+        </section>
+        <section class="NPR rankgroup">
+            <h2>NPR Ranking</h2>
+            <div class="rank one">
+                <button class="collapsible">
+                    <img src="images/up first.jpg" alt="up first logo"/>
+                    <p>NPR Up First</p>
+                </button>
+                <div class="content">
+                    <ul class="podcast-list npr">
+                        <li><strong>Up First</strong><br></li>
+                        <li><em>Summary:</em> Quick daily news covering top U.S. and global stories.<br></li>
+                        <li><em>Average Length:</em> 10–15 minutes<br></li>
+                        <li><em>Genre:</em> News, Daily Briefing<br></li>
+                        <li><em>Hosts:</em> Rotating (Steve Inskeep, Leila Fadel, A Martínez)</li>
+                      </ul>
+                </div>
+                <input type="checkbox" id="upfirst" name="upfirst" value="upfirst">
+                <label for="upfirst">Add to My List</label>
+            </div>
+            <br>
+            <div class="rank two">
+                <button class="collapsible">
+                    <img src="images/politics.jpg" alt="politics logo"/>
+                    <p>NPR Politics</p>
+                </button>
+                <div class="content">
+                    <ul class="podcast-list npr">
+                        <li><strong>NPR Politics Podcast</strong><br></li>
+                        <li><em>Summary:</em> Breakdown of current U.S. politics in a conversational format.<br></li>
+                        <li><em>Average Length:</em> 15–25 minutes<br></li>
+                        <li><em>Genre:</em> Politics, News<br></li>
+                        <li><em>Hosts:</em> NPR political reporters (Tamara Keith, Domenico Montanaro)</li>
+                    </ul>
+                </div>
+                <input type="checkbox" id="politics" name="politics" value="politics">
+                <label for="politics">Add to My List</label>
+            </div>
+            <br>
+            <div class="rank three">
+                <button class="collapsible">
+                    <img src="images/itsbeenamin.jpg" alt="It's Been a Minute logo"/>
+                    <p>NPR It's Been a Minute</p>
+                </button>
+                <div class="content">
+                    <ul class="podcast-list npr">
+                        <li><strong>It's Been a Minute</strong><br></li>
+                        <li><em>Summary:</em> Culture, news, and social issues with interviews and commentary.<br></li>
+                        <li><em>Average Length:</em> 30–50 minutes<br></li>
+                        <li><em>Genre:</em> Culture, Society<br></li>
+                        <li><em>Host:</em> Brittany Luse</li>
+                      </ul>
+                </div>
+                <input type="checkbox" id="beenamin" name="beenamin" value="beenamin">
+                <label for="beenamin">Add to My List</label>
+            </div>
+            <br>
+            <div class="rank four">
+                <button class="collapsible">
+                    <img src="images/now.jpg" alt="NPR News Now logo"/>
+                    <p>NPR News Now</p>
+                </button>
+                <div class="content">
+                    <ul class="podcast-list npr">
+                        <li><strong>NPR News Now</strong><br></li>
+                        <li><em>Summary:</em> Hourly news updates in a fast, headline format.<br></li>
+                        <li><em>Average Length:</em> ~5 minutes<br></li>
+                        <li><em>Genre:</em> News<br></li>
+                        <li><em>Host:</em> NPR newsroom</li>
+                      </ul>
+                </div>
+                <input type="checkbox" id="now" name="now" value="now">
+                <label for="now">Add to My List</label>
+            </div>
+            <br>
+            <div class="rank five">
+                <button class="collapsible">
+                    <img src="images/codeswitch.jpg" alt="Code Switch logo"/>
+                    <p>NPR Code Switch</p>
+                </button>
+                <div class="content">
+                    <ul class="podcast-list npr">
+                        <li><strong>Code Switch</strong><br></li>
+                        <li><em>Summary:</em> Deep dives into race, identity, and culture.<br></li>
+                        <li><em>Average Length:</em> 30–40 minutes<br></li>
+                        <li><em>Genre:</em> Society, Culture<br></li>
+                        <li><em>Hosts:</em> Gene Demby, Shereen Marisol Meraji</li>
+                      </ul>
+                </div>
+                <input type="checkbox" id="switch" name="switch" value="switch">
+                <label for="switch">Add to My List</label>
+            </div>
+            <br>
+            <div class="rank six">
+                <button class="collapsible">
+                    <img src="images/considerthis.png" alt="Consider This logo"/>
+                    <p>NPR Consider This</p>
+                </button>
+                <div class="content">
+                    <ul class="podcast-list npr">
+                        <li><strong>Consider This</strong><br></li>
+                        <li><em>Summary:</em> One major story explained in depth each weekday.<br></li>
+                        <li><em>Average Length:</em> 10–15 minutes<br></li>
+                        <li><em>Genre:</em> News Analysis<br></li>
+                        <li><em>Hosts:</em> Rotating NPR journalists</li>
+                      </ul>
+                </div>
+                <input type="checkbox" id="consider" name="consider" value="consider">
+                <label for="consider">Add to My List</label>
+            </div>
+            <br>
+        </section>
+        <section class="Japanese rankgroup">
+            <h2>Japanese Language Learning Ranking</h2>
+            <div class="rank one">
+                <button class="collapsible">
+                    <img src="images/yuyu.jpg" alt="yuyu's japanese podcast logo"/>
+                    <p>YUYUの日本語Podcast</p>
+                </button>
+                <div class="content">
+                    <ul class="podcast-list japanese">
+                        <li><strong>YUYUの日本語Podcast</strong><br></li>
+                        <li><em>Summary:</em> Casual conversations in natural Japanese for learners.<br></li>
+                        <li><em>Average Length:</em> 10–20 minutes<br></li>
+                        <li><em>Genre:</em> Language Learning<br></li>
+                        <li><em>Host:</em> Yuyu</li>
+                      </ul>
+                </div>
+                <input type="checkbox" id="yuyu" name="yuyu" value="yuyu">
+                <label for="yuyu">Add to My List</label>
+            </div>
+            <br>
+            <div class="rank two">
+                <button class="collapsible">
+                    <img src="images/letstalk.jpg" alt="Let's Talk in Japanese logo"/>
+                    <p>Let's Talk in Japanese</p>
+                </button>
+                <div class="content">
+                    <ul class="podcast-list japanese">
+                        <li><strong>Let's Talk in Japanese</strong><br></li>
+                        <li><em>Summary:</em> Level-based listening practice with clear speech.<br></li>
+                        <li><em>Average Length:</em> 10–30 minutes<br></li>
+                        <li><em>Genre:</em> Language Learning<br></li>
+                        <li><em>Host:</em> Tomo</li>
+                      </ul>
+                </div>
+                <input type="checkbox" id="letstalk" name="letstalk" value="letstalk">
+                <label for="letstalk">Add to My List</label>
+            </div>
+            <br>
+            <div class="rank three">
+                <button class="collapsible">
+                    <img src="images/haruno.jpg" alt="Haru no Nihongo logo"/>
+                    <p>Haru no Nihongo</p>
+                </button>
+                <div class="content">
+                    <ul class="podcast-list japanese">
+                        <li><strong>Haru no Nihongo</strong><br></li>
+                        <li><em>Summary:</em> Beginner-friendly Japanese explanations and slow speech.<br></li>
+                        <li><em>Average Length:</em> 10–20 minutes<br></li>
+                        <li><em>Genre:</em> Language Learning<br></li>
+                        <li><em>Host:</em> Haru</li>
+                      </ul>
+                </div>
+                <input type="checkbox" id="haruno" name="haruno" value="haruno">
+                <label for="haruno">Add to My List</label>
+            </div>
+            <br>
+            <div class="rank three">
+                <button class="collapsible">
+                    <img src="images/thikning.jpg" alt="Thinking in Japanese logo"/>
+                    <p>Thinking in Japanese</p>
+                </button>
+                <div class="content">
+                    <ul class="podcast-list japanese">
+                        <li><strong>Thinking in Japanese</strong><br></li>
+                        <li><em>Summary:</em> Helps learners think directly in Japanese through immersion-style talk.<br></li>
+                        <li><em>Average Length:</em> 15–30 minutes<br></li>
+                        <li><em>Genre:</em> Language Learning<br></li>
+                        <li><em>Host:</em> Various creators</li>
+                      </ul>
+                </div>
+                <input type="checkbox" id="thinking" name="thinking" value="thinking">
+                <label for="thinking">Add to My List</label>
+            </div>
+            <br>
+        </section>
+        <section class="miscellanious rankgroup">
+            <h2>Miscellanious Recommendations</h2>
+            <div class="rank one">
+                <button class="collapsible">
+                    <img src="images/wtnv.jpg" alt="Welcome to Nightvale Logo"/>
+                    <p>Welcome to Nightvale</p>
+                </button>
+                <div class="content">
+                    <ul class="podcast-list misc">
+                        <li><strong>Welcome to Night Vale</strong><br></li>
+                        <li><em>Summary:</em> Fictional radio show from a surreal desert town.<br></li>
+                        <li><em>Average Length:</em> 20–30 minutes<br></li>
+                        <li><em>Genre:</em> Fiction, Horror Comedy<br></li>
+                        <li><em>Host:</em> Cecil Baldwin</li>
+                      </ul>
+                </div>
+                <input type="checkbox" id="welcome" name="welcome" value="welcome">
+                <label for="welcome">Add to My List</label>
+            </div>
+            <div class="rank two">
+                <button class="collapsible">
+                    <img src="images/mots.jpg" alt="Moral of the Story Logo"/>
+                    <p>Moral of the Story</p>
+                </button>
+                <div class="content">
+                    <ul class="podcast-list misc">
+                        <li><strong>Moral of the Story</strong><br></li>
+                        <li><em>Summary:</em> Personal stories and life lessons from real experiences.<br></li>
+                        <li><em>Average Length:</em> 20–40 minutes<br></li>
+                        <li><em>Genre:</em> Storytelling, Self-Improvement<br></li>
+                        <li><em>Host:</em> Various</li>
+                      </ul>
+                </div>
+                <input type="checkbox" id="moral" name="moral" value="moral">
+                <label for="moral">Add to My List</label>
+            </div>
+            <div class="rank three">
+                <button class="collapsible">
+                    <img src="images/rm.jpg" alt="Rotten Mango Logo"/>
+                    <p>Rotten Mango</p>
+                </button>
+                <div class="content">
+                    <ul class="podcast-list misc">
+                        <li><strong>Rotten Mango</strong><br></li>
+                        <li><em>Summary:</em> Deep dives into true crime cases with storytelling flair.<br></li>
+                        <li><em>Average Length:</em> 60–120 minutes<br></li>
+                        <li><em>Genre:</em> True Crime<br></li>
+                        <li><em>Host:</em> Stephanie Soo</li>
+                      </ul>
+                </div>
+                <input type="checkbox" id="rotten" name="rotten" value="rotten">
+                <label for="rotten">Add to My List</label>
+            </div>
+            <div class="rank four">
+                <button class="collapsible">
+                    <img src="images/bookskill.jpg" alt="If Books Could Kill Logo"/>
+                    <p>If Books Could Kill</p>
+                </button>
+                <div class="content">
+                    <ul class="podcast-list misc">
+                        <li><strong>If Books Could Kill</strong><br></li>
+                        <li><em>Summary:</em> Critiques popular nonfiction books and their ideas.<br></li>
+                        <li><em>Average Length:</em> 45–60 minutes<br></li>
+                        <li><em>Genre:</em> Commentary, Comedy<br></li>
+                        <li><em>Hosts:</em> Michael Hobbes, Peter Shamshiri</li>
+                      </ul>
+                </div>
+                <input type="checkbox" id="bookskill" name="bookskill" value="bookskill">
+                <label for="bookskill">Add to My List</label>
+            </div>
+        </section>
+
+    </main>
+<script src="js/collapsible.js"> </script>
+<script src="js/toggle.js"></script>
+<script src="js/podcastList.js"></script>
+<!-- collapsible list from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_collapsible_animate -->
+<!-- Summaries for podcasts generated by Chat GPT with prompt: Create short summaries for each podcast, list out the average length of each podcast, their genres, and hosts. -->
+</body>
+</html>

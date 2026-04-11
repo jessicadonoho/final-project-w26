@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/html-reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="skip"><a href="#main">Skip to Main Content</a></div>
+        <div class="flexor">
+            <img class="logo" src="images/logo transparent.png" alt="logo">
+            <nav class="inner-container">
+                <ul>
+                    <li class="active"><a href = "index.html">Home Page</a></li>
+                    <li><a href = "ranking.html">Ranking</a></li>
+                    <li><a href = "credibility.html">Credibility</a></li>
+                    <li><a href= "recommend.html">Podcast 4 U!</a></li>
+                </ul>
+        </div>
+        </nav>
+      <h1>Welcome to Jess' Listening Hub!</h1>
+      <img tabindex= 0 class="toggle" src="favicons/dark.png" alt="toggle dark mode">
+    </header>
+    <main>
+    <section class="image-set">
+        <!-- css for hover effect inspired by https://w3bits.com/css-image-hover-zoom/  -->
+        <img class="horiz" src="images/grass.jpg" alt="person lying in grass listening to headphones">
+        <img class="vert" src="images/gorg.jpg" alt="person in dramatic lighting listening to earbuds">
+        <img class="horiz" src="images/drama.jpg" alt="person in field of wheat listening to earbuds">
+    </section>
+    <section class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="q1">
+            <h3>What is a podcast?</h3> <!-- Make h3 bold -->
+            <blockquote cite="https://en.wikipedia.org/wiki/Podcast">
+                A podcast is a program episode made available in digital format for download over the Internet. Podcasts are primarily an audio medium, which is reflected in the term itself, a portmanteau of "iPod" and "broadcast" coined in 2004. The term used to refer to an episodic series of digital audio files that users can download to a personal device or stream to listen to at a time of their choosing.
+            </blockquote>
+        </div>
+        <img class="decor" src="images/Sound-Waves-PNG-Photo-4025058712.png" alt="">
+        <div class="q2">
+            <h3>Why do you listen to them?</h3>
+            <p>
+                People listen to podcasts for pleasure: engaging hosts, humor, and a relaxing escape. They’re drawn to stories—true crime, fiction, interviews—that entertain and inspire. Others rely on podcasts for news and analysis that add context beyond headlines. Many use them for language learning, improving listening, vocabulary, pronunciation, and confidence.
+                <!-- From UM GPT with prompt: "create a 50 word blurb for why people listen to podcasts including reasons for pleasure, stories, news, and language learning and get rid of the explanation for where and when people listen to podcasts" -->
+            </p>
+        </div>
+        <img class="decor" src="images/Sound-Waves-PNG-Photo-4025058712.png" alt="">
+        <div class="q2">
+            <h3>When and where do people listen to podcasts?</h3>
+            <p>
+                People listen to podcasts during moments when their eyes are busy but their minds are free—commutes, workouts, cooking, cleaning, or winding down at night. They tune in at home, in the car, on public transit, at the gym, or while walking outside. Flexible episodes make listening easy in short bursts or long stretches.
+                <!-- From UM GPT with prompt: create a similar blurb for the question "When and where do people listen to podcasts"-->
+            </p>
+        </div>
+    </section>
+    <section class="sources">
+        <h2>Places to Listen</h2>
+        <p>There are many different tools and apps to listen to podcasts. Here are some of the most common:</p>
+        <ul class="podcast-tools podcast-tools--alternate podcast-tools--500005">
+            <li>
+                <a href="https://podcasts.apple.com/us/new" class="podcast_source apple">
+                    <button>Apple Podcasts</button>
+                </a>
+            </li>
+            <li>
+                    <a href="https://open.spotify.com/genre/podcasts-web" class="podcast_source spotify">
+                        <button>Spotify</button>
+                    </a>
+            </li>
+            <li>
+                    <a href="https://music.amazon.com/podcasts"class="podcast_source amazon">
+                        <button>Amazon Music</button>
+                    </a>
+            </li>
+            <li>
+                    <a href="https://music.youtube.com/podcasts" class="podcast_source youtube">
+                        <button>Youtube Music</button>
+                    </a>
+            </li>
+            <li>
+                    <a href="https://www.iheart.com/podcast" class="podcast_source iheart">
+                        <button>iHeart Radio</button>
+                    </a>
+            </li>
+        </ul>
+        <!--list of links came from NPR.com and was edited-->
+    </section>
+    <section class="initial_recs">
+        <h2>Some initial recommendations:</h2>
+        <p>These are some of my favorite podcasts to listen to.</p>
+        <ul>
+            <li>
+                <h3>My Favorite Podcast: Moral of the Story</h3>
+                <p>
+                    "Moral of the Story" is a podcast hosted by Stephanie Soo and her husband, typically featuring deep dives into unhinged, wild, and intense true scandals from around the world. It acts as a less intense alternative to her other podcast, Rotten Mango, often focusing on social scandals or shocking real-life stories.
+                </p>
+                <!--Description came from Google AI Overview-->
+                <div class="list links">
+                    <div class="spotify">
+                        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/show/1VoAfPc2yXoHcTrMw8Akim?utm_source=generator" width="300" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </div>
+                    <div class="youtube">
+                        <iframe width="300" height="152" src="https://www.youtube.com/embed/videoseries?si=8i1TLSZn6NMJNIHT&amp;list=PLqwCKO-G74xxLFLioRARemfZAoaVncySQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div>
+                        <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:300;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.podcasts.apple.com/us/podcast/wandagate-soccer-player-grows-up-idolizing-star-player/id1763891818?i=1000758038986"></iframe>
+                    </div>
+                    <div>
+                        <p><em>or wherever you get your podcasts</em></p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <h3>My Favorite News Source: NPR's Up First</h3>
+                <p>
+                    Up First is a popular daily news podcast from NPR that provides a concise, 10–15 minute overview of the top three news stories, designed to be heard in the morning.
+                </p>
+                <!--Description came from Google AI Overview-->
+                <div class="spotify">
+                    <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/show/2mTUnDkuKUkhiueKcVWoP0?utm_source=generator" width="300" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+                <div class="apple">
+                    <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:300;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.podcasts.apple.com/us/podcast/the-americans-caught-in-ices-web-of-surveillance/id1222114325?i=1000759111087"></iframe>
+                </div>
+            </li>
+            <li>
+                <h3>My Favorite Japanese Podcast: Yuyu's Japanese Podcast (YUYUの日本語)</h3>
+                <p>
+                    YUYUの日本語Podcast (Yuyu no Nihongo Podcast) is a popular,, natural-paced podcast designed to help intermediate Japanese learners (around JLPT N4-N3 level) improve their listening skills. Hosted by Yuyu, it features engaging monologues and conversations about Japanese history, culture, language tips, and daily life topics, often with available transcripts.
+                </p>
+                <!--Description came from Google AI Overview-->
+                <div class="spotify">
+                    <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/show/0hQDsR0brfk88Nls8fydo4?utm_source=generator" width="300" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+                <div class="youtube">
+                    <iframe width="300" height="152" src="https://www.youtube.com/embed/GMICGZX3WYY?si=MqLwezL8B9wHDhFS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="apple">
+                    <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:300;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.podcasts.apple.com/us/podcast/vol-435-%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A%E8%AA%9E%E3%81%AF%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%82%92%E8%B1%8A%E3%81%8B%E3%81%AB%E3%81%99%E3%82%8B%E3%81%8B-%E6%AD%B4%E5%8F%B2%E7%B7%A8-japanese-radio-for-listening/id1480155677?i=1000754224914"></iframe>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section class="discovery">
+        <h2>What if I want my own favorite?</h2>
+        <div class="tip1">
+            <h3>Tip 1</h3>
+            <p>Get recommendations from your friends</p>
+        </div>
+        <div class="tip2">
+            <h3>Tip 2</h3>
+            <p>Search online for a topic you enjoy</p>
+        </div>
+        <div class="tip3">
+            <h3>Tip 3</h3>
+            <p>Try listening to something!</p>
+        </div>
+        <div class="subtip">
+            <p>You can't really know if you'll enjoy a podcast until you try listening to it!</p>
+        </div>
+    </section>
+    </main>
+<script src="js/toggle.js"></script>
+</body>
+</html>
