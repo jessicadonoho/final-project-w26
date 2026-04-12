@@ -118,6 +118,16 @@
 }
 
 
+.sour-gummy-<uniquifier> {
+  font-family: "Sour Gummy", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
 /* Skip to Main */
 .skip a{
   position: absolute;
@@ -137,7 +147,7 @@
 header{
   background-color: var(--color-primary);
   color: var(--color-bg);
-  font-family: "Playfair Display", "Times New Roman";
+  font-family: "Playfair Display", "Cambria", "Times New Roman";
   line-height: 150%;
 }
 
@@ -189,7 +199,7 @@ header nav ul li a:hover{
 }
 
 h1{
-  font-size: large;
+  font-size: x-large;
   text-align: center;
   padding: 5%;
 }
@@ -197,6 +207,7 @@ h1{
 .toggle{
   position: fixed;
   bottom: -1px;
+  right:-1px;
   background: var(--color-accent);
   border: var(--color-border);
   border-radius: 5px;
@@ -209,8 +220,10 @@ main{
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 20px;
   padding: 2%;
-  font-family: Inter;
+  font-family: "Sour Gummy", Inter, "Lucida Sans";
   line-height: 150%;
+  letter-spacing: 1px;
+  font-size: large;
 }
 
 section{
@@ -223,14 +236,14 @@ section{
   gap:10px;
 }
 section h2{
-  font-size: large;
+  font-size: larger;
   font-weight: 700;
   font-family: "Playfair Display";
   text-align: center;
 }
 h3{
 
-    font-size: medium;
+    font-size: large;
     font-weight: 700;
     font-family: "Playfair Display";
     text-decoration: underline;
@@ -261,7 +274,7 @@ section img{
   margin: 2% 0;
 }
 
-section ul{
+.sources ul{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -287,6 +300,14 @@ button:hover{
   cursor: pointer;
 }
 
+/* Credible */
+main li {
+  margin-left: 20px;
+}
+section ul{
+  list-style-type: hiragana;
+  list-style-image: url('/favicons/flower.png');
+}
 
 
 
@@ -294,17 +315,27 @@ button:hover{
 .rankgroup{
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
 }
 .rankgroup h2{
   width:100%;
 }
+.rankgroup ul{
+  display:block;
+}
+.rankgroup ul li:first-child{
+  font-family: "Playfair Display";
+  font-weight: 700;;
+}
+
 
 .rank{
-  background-color: var(--color-muted-dark);
+  background-color: var(--color-bg);
   border: 3px double rgb(111, 48, 143);
   width: 70%;
   border-radius: 10px;
-  justify-self:center;
+  flex-grow: 0;
 }
 
 button img{
@@ -333,6 +364,7 @@ button img{
     overflow: auto;
     transition: max-height 0.2s ease-out;
     background-color: var(--color-inactive-text);
+    color:var(--color-hover);
   }
 
   .logo{
@@ -344,3 +376,162 @@ button img{
 form{
   grid-column: 1/-1;
 }
+
+
+.selected button{
+  margin: 10px 10px;
+}
+.receipt{
+  display:grid;
+}
+.selected{
+  grid-column: 1/-1;
+  margin: 0 20px;
+}
+
+
+/* Podcast 4 U */
+legend {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  text-align: center;
+  text-decoration: underline;
+  font-size: larger;
+}
+
+.question{
+  margin-top: 2%;
+  border-top-color: var(--color-border);
+  border-top-style: double;
+  border-top-width: 2px;
+}
+
+
+/* Questions */
+fieldset{
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+
+.styled{
+  padding: 12px 18px;
+  margin: 8px 0;
+  border: 2px solid #ccc;
+  border-color: var(--color-pink);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 1s ease;
+  font-family: Arial, sans-serif;
+  background-color: var(--color-white);
+  color: var(--color-pink-dark);
+  font-family: "Sour Gummy";
+}
+
+
+.styled:hover {
+  background: var(--color-active);
+  color: var(--color-active-text)
+}
+
+
+input[type="radio"]:checked + label {
+  background: var(--color-inactive);
+  color: white;
+  border-color: var(--color-purple-dark);
+  font-weight: 700;
+}
+
+
+.end input{
+  padding: 10px 20px;
+  background-color: var(--color-button-bg);
+  color: var(--color-button-text);
+  border-radius: 10px;
+  border: 2px black solid;
+  border-color: var(--color-border);
+  cursor: pointer;
+}
+.end input:hover{
+  background-color: var(--color-button-hover);
+}
+
+.selected{
+  display: flex;
+  flex-wrap: wrap;
+  gap:20px;
+}
+
+.rec{
+  background: #FFF1D3;
+  background: linear-gradient(90deg,rgba(255, 241, 211, 1) 0%, rgba(224, 163, 139, 1) 25%, rgba(224, 137, 184, 1) 70%, rgba(207, 143, 219, 1) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:fit-content;
+  border-radius: 10px;
+  padding: 2%;
+}
+.rec .links{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.rec img{
+  border-radius: 10px;
+  border: 4px black double;
+  border-color: var(--color-purple)
+}
+.rec h2{
+  background-color: var(--color-cream);
+  padding: 10px 15px;
+  color: var(--color-active-text);
+  border-radius: 10px;
+  margin: 10px 0 5px 0;
+}
+
+/* Footer */
+footer{
+  display: flex;
+  flex-direction: column;
+  background-color: #2A0E2F;
+  color:#E6D3C3;
+  font-size: larger;
+  font-family: "Playfair Display";
+  align-items: center;
+  gap: 20px;
+}
+footer h2{
+  margin: 20px 0;
+}
+footer p{
+  margin: 20px 0;
+  font-size: medium;
+}
+
+@media (min-width: 600px) {
+  nav ul{
+    display: flex;
+    height: 120px;
+  }
+  nav ul li{
+    width: 25%;
+    height: 100%;
+    align-items: stretch;
+    border-right: 2px solid white;
+    border-right-color: var(--color-border);
+    display:flex;
+  }
+  nav ul li a{
+    width:100%;
+    font-size: x-large;
+  }
+}
+
+/* MEdia Query reduce motion: */

@@ -16,84 +16,84 @@ const podcast = [
     {
       title: "It's Been a Minute",
       spotifyLink: "https://open.spotify.com/show/6gcw7EF2i70vXXXJnhBNgA?si=e37f6c97fad84a33",
-      appleLink: "https://podcasts.apple.com/us/podcast/its-been-a-minute",
-      ytMusicLink: "https://music.youtube.com/search?q=Its+Been+a+Minute+NPR",
+      appleLink: "https://podcasts.apple.com/us/podcast/its-been-a-minute/id1250180134",
+      ytMusicLink: "https://music.youtube.com/library/podcasts?addrssfeed=https://feeds.npr.org/510317/podcast.xml",
       image:"images/itsbeenamin.jpg"
     },
     {
       title: "NPR News Now",
       spotifyLink: "https://open.spotify.com/show/6BRSvIBNQnB68GuoXJRCnQ?si=1b90ddb1daec4824",
-      appleLink: "https://podcasts.apple.com/us/podcast/npr-news-now",
-      ytMusicLink: "https://music.youtube.com/search?q=NPR+News+Now",
+      appleLink: "https://podcasts.apple.com/us/podcast/npr-news-now/id121493675",
+      ytMusicLink: "https://music.youtube.com/library/podcasts?addrssfeed=https://feeds.npr.org/500005/podcast.xml",
       image:"images/now.jpg"
     },
     {
       title: "Code Switch",
       spotifyLink: "https://open.spotify.com/show/3bExJ9JQpkwNhoHvaIIuyV?si=b98f22ae1b914be2",
-      appleLink: "https://podcasts.apple.com/us/podcast/code-switch",
-      ytMusicLink: "https://music.youtube.com/search?q=NPR+Code+Switch", 
+      appleLink: "https://podcasts.apple.com/us/podcast/code-switch/id1112190608",
+      ytMusicLink: "https://music.youtube.com/library/podcasts?addrssfeed=https://feeds.npr.org/510312/podcast.xml", 
       image:"images/codeswitch.jpg"
     },
     {
       title: "Consider This",
       spotifyLink: "https://open.spotify.com/show/3Z6JdCS2d0eFEpXHKI6WqH?si=982becb968244405",
-      appleLink: "https://podcasts.apple.com/us/podcast/consider-this-from-npr",
-      ytMusicLink: "https://music.youtube.com/search?q=NPR+Consider+This", 
+      appleLink: "https://podcasts.apple.com/us/podcast/consider-this-from-npr/id1503226625",
+      ytMusicLink: "https://music.youtube.com/library/podcasts?addrssfeed=https://feeds.npr.org/510355/podcast.xml", 
       image: "images/considerthis.png"
     },
     {
       title: "YUYUの日本語Podcast",
       spotifyLink: "https://open.spotify.com/search/yuyu%20japanese%20podcast",
-      appleLink: "https://podcasts.apple.com/search?term=yuyu%20japanese",
+      appleLink: "https://podcasts.apple.com/us/podcast/yuyu-nihongo-podcast-japanese-podcast/id1480155677",
       ytMusicLink: "https://music.youtube.com/search?q=YUYUの日本語Podcast", 
       image:"images/yuyu.jpg"
     },
     {
       title: "Let's Talk in Japanese",
       spotifyLink: "https://open.spotify.com/show/7rzB4zCdrSf67jd3nHm8Vy?si=f4eec3f71ed44ebb",
-      appleLink: "https://podcasts.apple.com/search?term=lets%20talk%20in%20japanese",
+      appleLink: "https://podcasts.apple.com/us/podcast/lets-talk-in-japanese/id1470844095",
       ytMusicLink: "https://music.youtube.com/search?q=Let's+Talk+in+Japanese", 
       image:"images/letstalk.jpg"
     },
     {
       title: "Haru no Nihongo",
       spotifyLink: "https://open.spotify.com/show/1gQ0ZdFpTOqiyLeOaCCn6U?si=5ac26d874acb45b1",
-      appleLink: "https://podcasts.apple.com/search?term=haru%20no%20nihongo",
+      appleLink: "https://podcasts.apple.com/us/podcast/haru-no-nihongo/id1519563720",
       ytMusicLink: "https://music.youtube.com/search?q=Haru+no+Nihongo", 
       image:"images/haruno.jpg"
     },
     {
       title: "Thinking in Japanese",
       spotifyLink: "https://open.spotify.com/show/0lBMf4PEpcG7W44lG6ORKR?si=8c99a8af15804101",
-      appleLink: "https://podcasts.apple.com/search?term=thinking%20in%20japanese",
+      appleLink: "https://podcasts.apple.com/us/podcast/thinking-in-japanese-podcast/id1485946726",
       ytMusicLink: "https://music.youtube.com/search?q=Thinking+in+Japanese", 
       image:"images/thikning.jpg"
     },
     {
       title: "Welcome to Night Vale",
       spotifyLink: "https://open.spotify.com/show/0s6Wc5qf8SIvCtKZNC6N7s?si=1257e00795284fbe",
-      appleLink: "https://podcasts.apple.com/us/podcast/welcome-to-night-vale",
+      appleLink: "https://podcasts.apple.com/us/podcast/welcome-to-night-vale/id536258179",
       ytMusicLink: "https://music.youtube.com/search?q=Welcome+to+Night+Vale", 
       image:"images/wtnv.jpg"
     },
     {
       title: "Moral of the Story",
       spotifyLink: "https://open.spotify.com/show/1VoAfPc2yXoHcTrMw8Akim?si=bf41e9d7b8c84638",
-      appleLink: "https://podcasts.apple.com/search?term=moral%20of%20the%20story",
+      appleLink: "https://podcasts.apple.com/us/podcast/moral-of-the-story/id1763891818",
       ytMusicLink: "https://music.youtube.com/search?q=Moral+of+the+Story+podcast", 
       image:"images/mots.jpg"
     },
     {
       title: "Rotten Mango",
       spotifyLink: "https://open.spotify.com/show/2DZwvzn6Z3xCFZrwZGDrbj?si=fc62bbd553fc43c4",
-      appleLink: "https://podcasts.apple.com/us/podcast/rotten-mango",
+      appleLink: "https://podcasts.apple.com/us/podcast/rotten-mango/id1517954480",
       ytMusicLink: "https://music.youtube.com/search?q=Rotten+Mango", 
       image: "images/rm.jpg"
     },
     {
       title: "If Books Could Kill",
       spotifyLink: "https://open.spotify.com/show/2khJBoF73ujIATWUFtSxLD?si=60a2829069e948e7",
-      appleLink: "https://podcasts.apple.com/us/podcast/if-books-could-kill",
+      appleLink: "https://podcasts.apple.com/us/podcast/if-books-could-kill/id1651876897",
       ytMusicLink: "https://music.youtube.com/search?q=If+Books+Could+Kill",
       image: "images/bookskill.jpg"
     }
@@ -103,12 +103,14 @@ const recFormat = (num)=>{
     return (
         `
             <div class="rec">
-                <p>${podcast[num].title}</p>
+                <h2>${podcast[num].title}</h2>
                 <img src="${podcast[num].image}" alt="${podcast[num].title} logo"/>
                 <br>
-                <a href="${podcast[num].spotifyLink}">Spotify Link</a>
-                <a href="${podcast[num].appleLink}">Apple Link</a>
-                <a href="${podcast[num].ytMusicLink}">YouTube Music Link</a>
+                <div class="links">
+                    <a href="${podcast[num].spotifyLink}"><button>Spotify Link</button></a>
+                    <a href="${podcast[num].appleLink}"><button>Apple Link</button></a>
+                    <a href="${podcast[num].ytMusicLink}"><button>YouTube Music Link</button></a>
+                </div>
             </div>
         `
     )
