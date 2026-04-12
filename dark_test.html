@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Podcast UI - Dark Mode</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Inter, sans-serif;
+    background-color: #1A0B1F;
+    color: #FFF1D3;
+  }
+
+  header {
+    background: #2A0E2F;
+    color: #FFF1D3;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+  }
+
+  .container {
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
+  }
+
+  .card {
+    background: #2A0E2F;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  }
+
+  .title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .meta {
+    color: #E6D3C3;
+    font-size: 0.9rem;
+  }
+
+  a {
+    color: #FFB090;
+    text-decoration: underline;
+  }
+
+  a:hover {
+    color: #FF8A6A;
+  }
+
+  .tag {
+    display: inline-block;
+    background: #CA5995;
+    color: #FFF;
+    padding: 0.25rem 0.5rem;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    margin-right: 0.5rem;
+  }
+
+  button {
+    background: #FFB090;
+    color: #1A0B1F;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background: #FF8A6A;
+  }
+</style>
+</head>
+<body>
+
+<header>🎧 Podcast Picks (Dark)</header>
+
+<div class="container">
+
+  <div class="card">
+    <div class="title">Tech Unfiltered</div>
+    <div class="meta">Technology · 30 min</div>
+    <p>Deep dives into startups, AI, and innovation.</p>
+    <span class="tag">Tech</span>
+    <span class="tag">Popular</span><br><br>
+    <a href="#">Listen now</a><br><br>
+    <button>Save</button>
+  </div>
+
+  <div class="card">
+    <div class="title">Mindful Minutes</div>
+    <div class="meta">Wellness · 15 min</div>
+    <p>Short guided sessions for calm and focus.</p>
+    <span class="tag">Wellness</span>
+    <span class="tag">Relax</span><br><br>
+    <a href="#">Listen now</a><br><br>
+    <button>Save</button>
+  </div>
+
+</div>
+
+</body>
+</html>

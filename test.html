@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Podcast UI - Light Mode</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Inter, sans-serif;
+    background-color: #FFF1D3;
+    color: #2A0E2F;
+  }
+
+  header {
+    background: #5D1C6A;
+    color: #FFF1D3;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+  }
+
+  .container {
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
+  }
+
+  .card {
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  }
+
+  .title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .meta {
+    color: #5B4A5F;
+    font-size: 0.9rem;
+  }
+
+  a {
+    color: #5D1C6A;
+    text-decoration: underline;
+  }
+
+  a:hover {
+    color: #3E1248;
+  }
+
+  .tag {
+    display: inline-block;
+    background: #CA5995;
+    color: #FFF;
+    padding: 0.25rem 0.5rem;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    margin-right: 0.5rem;
+  }
+
+  button {
+    background: #5D1C6A;
+    color: #FFF1D3;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background: #3E1248;
+  }
+</style>
+</head>
+<body>
+
+<header>🎧 Podcast Picks</header>
+
+<div class="container">
+
+  <div class="card">
+    <div class="title">The Daily Insight</div>
+    <div class="meta">News · 20 min</div>
+    <p>A quick breakdown of today’s biggest stories.</p>
+    <span class="tag">Trending</span>
+    <span class="tag">News</span><br><br>
+    <a href="#">Listen now</a><br><br>
+    <button>Save</button>
+  </div>
+
+  <div class="card">
+    <div class="title">Design Matters</div>
+    <div class="meta">Design · 45 min</div>
+    <p>Conversations with top creatives and designers.</p>
+    <span class="tag">Creative</span>
+    <span class="tag">Interviews</span><br><br>
+    <a href="#">Listen now</a><br><br>
+    <button>Save</button>
+  </div>
+
+</div>
+
+</body>
+</html>
