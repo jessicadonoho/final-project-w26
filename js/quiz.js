@@ -4,7 +4,7 @@ const podcast = [
       spotifyLink: "https://open.spotify.com/show/2mTUnDkuKUkhiueKcVWoP0",
       appleLink: "https://podcasts.apple.com/us/podcast/up-first-from-npr/id1222114325",
       ytMusicLink: "https://music.youtube.com/library/podcasts?addrssfeed=https://feeds.npr.org/510318/podcast.xml",
-      image:"images/up first.jpg"
+      image:"images/up-first.jpg"
     },
     {
       title: "NPR Politics Podcast",

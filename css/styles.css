@@ -300,15 +300,25 @@ button:hover{
   cursor: pointer;
 }
 
+.embeds{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
 /* Credible */
 main li {
   margin-left: 20px;
 }
 section ul{
-  list-style-type: hiragana;
+  list-style-type: disc;
   list-style-image: url('/favicons/flower.png');
 }
 
+.podcast-tools{
+  list-style: none;
+}
 
 
 /* collapsible from w3 */
