@@ -313,7 +313,7 @@ main li {
 }
 section ul{
   list-style-type: disc;
-  list-style-image: url('/favicons/flower.png');
+  list-style-image: url('../favicons/flower.png');
 }
 
 .podcast-tools{
