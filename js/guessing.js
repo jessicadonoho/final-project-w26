@@ -346,84 +346,82 @@ const podcastGameAI = [
         title: "YUYUの日本語Podcast",
         image: "images/yuyu.jpg",
         listOfEpisodes: [
-            "Vol.446 【リクエスト】あと一歩が頑張れない君へ (Japanese Radio for Listening practice)",
-            "Vol.445 「さん」をつけられる意外な単語たち (Japanese Radio for Listening practice)",
-            "Vol.444 日本の春について話す (Japanese Radio for Listening practice)",
-            "Vol.443 最近ハマっていること (Japanese Radio for Listening practice)",
-            "Vol.442 日本語を勉強している理由 (Japanese Radio for Listening practice)",
-            "Vol.441 日本の働き方について (Japanese Radio for Listening practice)",
-            "Vol.440 桜と花見の文化 (Japanese Radio for Listening practice)",
-            "Vol.439 ストレス解消法 (Japanese Radio for Listening practice)"
-        ],
-        links: {
+            "【リクエスト】あと一歩が頑張れない君へ // [Request] To you who can't continue one more step",
+            "さん」をつけられる意外な単語たち // Words that you can surprisingly add '-san' to ",
+            "日本の春について話す // Talk about Japan's Spring",
+            "最近ハマっていること // Things that have been trendy lately",
+            "日本語を勉強している理由 // Reasons to study Japanese",
+            "日本の働き方について // About Japan's working style",
+            "桜と花見の文化 // Sakura viewing culture",
+            "ストレス解消法 // Stress prevention"
+          ],
+          links: {
             spotify: "https://open.spotify.com/search/yuyu%20japanese%20podcast",
             apple: "https://podcasts.apple.com/us/podcast/yuyu-nihongo-podcast-japanese-podcast/id1480155677",
             ytMusic: "https://music.youtube.com/search?q=YUYUの日本語Podcast"
-        },
-        hint: "Japanese"
-        },
-        {
-        key: "letstalk",
-        title: "Let's Talk in Japanese",
-        image: "images/letstalk.jpg",
-        listOfEpisodes: [
-            "episode361「飲み会とかみんなとのつながりとか(N2)」",
-            "episode360「敬語(N2)」",
-            "episode359「中高生向け向けの教科書(日本人)」",
-            "飲み会についてくわしい説明",
-            "飲み会やるぞー！！",
-            "episode358「天皇の歴史(N2)」",
-            "episode357「日本は環境共生か(N3)タメ口ver.」",
-            "episode356「ソース(N4) タメ口ver」"
-        ],
-        links: {
-            spotify: "https://open.spotify.com/show/7rzB4zCdrSf67jd3nHm8Vy?si=f4eec3f71ed44ebb",
-            apple: "https://podcasts.apple.com/us/podcast/lets-talk-in-japanese/id1470844095",
-            ytMusic: "https://music.youtube.com/search?q=Let's+Talk+in+Japanese"
-        },
-        hint: "Japanese"
+          }
         },
         {
-        key: "haruno",
-        title: "Haru no Nihongo",
-        image: "images/haruno.jpg",
-        listOfEpisodes: [
-            "日本で何が人気？最新の日本の流行を紹介します！【Video】EP-313",
-            "日本の卒業式と私の思い出🌸【Video】EP-312",
-            "お金は？なにが人気？日本のアルバイトを詳しく説明します！【Video】EP-311",
-            "日本の常識？1月〜12月には別の名前がある！【Video】EP-310",
-            "保護猫モナくんがうちに来るまでの話【Video】EP-309",
-            "日本語のニュースで学ぼう！最新ニュース解説【Video】EP-308",
-            "日本の結婚式ってどんな感じ？【Video】EP-307",
-            "OYASUMI PODCAST: 眠れない夜に【Video】EP-306"
-        ],
-        links: {
-            spotify: "https://open.spotify.com/show/1gQ0ZdFpTOqiyLeOaCCn6U?si=5ac26d874acb45b1",
-            apple: "https://podcasts.apple.com/us/podcast/haru-no-nihongo/id1519563720",
-            ytMusic: "https://music.youtube.com/search?q=Haru+no+Nihongo"
-        },
-        hint: "Japanese"
+            key:"letstalk",
+            title: "Let's Talk in Japanese",
+            image:"images/letstalk.jpg",
+            listOfEpisodes: [
+                "「飲み会とかみんなとのつながりとか(N2)」// Things that connect everyone, like drinking parties",
+                "「敬語(N2)」// Polite Speech",
+                "「中高生向け向けの教科書(日本人)」// Textbooks directed towards Middle Schoolers",
+                "飲み会についてくわしい説明 // Detailed discussion about drinking parties",
+                "飲み会やるぞー！！ // Let's do a drinking party",
+                "「天皇の歴史(N2)」// History of the Emperor",
+                "「日本は環境共生か(N3)タメ口ver.」 // Does Japan co-exist with the environment?",
+                "「ソース(N4) タメ口ver」// Sauce"
+            ],
+            links: {
+                spotify: "https://open.spotify.com/show/7rzB4zCdrSf67jd3nHm8Vy?si=f4eec3f71ed44ebb",
+                apple: "https://podcasts.apple.com/us/podcast/lets-talk-in-japanese/id1470844095",
+                ytMusic: "https://music.youtube.com/search?q=Let's+Talk+in+Japanese"
+            }
         },
         {
-        key: "thinking",
-        title: "Thinking in Japanese",
-        image: "images/thikning.jpg",
-        listOfEpisodes: [
-            "A goal doesn't work without a plan ゴールはプランがないと役に立たない",
-            "The slower the better sometimes 遅いほうがいいこともある",
-            "Healthy boundaries save you and others 境界線はあなたもほかの人も助ける",
-            "Placebo effect is still effective even when you know it プラシーボは知ってても効果がある",
-            "Just a walk helps you think clearly 歩くのは考えをクリアにする",
-            "How to be healthier without changing what you eat 食べるものを変えないで健康になる方法",
-            "Eating order does matter 食べる順番は大切",
-            "Brain changes even in adulthood 脳は大人になっても変わる"
-        ],
-        links: {
-            spotify: "https://open.spotify.com/show/0lBMf4PEpcG7W44lG6ORKR?si=8c99a8af15804101",
-            apple: "https://podcasts.apple.com/us/podcast/thinking-in-japanese-podcast/id1485946726",
-            ytMusic: "https://music.youtube.com/search?q=Thinking+in+Japanese"
-        }, 
-        hint: "Japanese"
+            key:"haruno",
+            title: "Haru no Nihongo",
+            image: "images/haruno.jpg",
+            listOfEpisodes: [
+                "日本で何が人気？最新の日本の流行を紹介します！ // What is popular in Japan? Things that have been trendy lately!",
+                "日本の卒業式と私の思い出🌸 // Japan Graduation and my Memories",
+                "お金は？なにが人気？日本のアルバイトを詳しく説明します！ // Money is? Why is it popular? Let's talk about Japan's part-time jobs!",
+                "日本の常識？1月〜12月には別の名前がある！ // ",
+                "保護猫モナくんがうちに来るまでの話【Video】EP-309",
+                "日本語のニュースで学ぼう！最新ニュース解説【Video】EP-308",
+                "日本の結婚式ってどんな感じ？【Video】EP-307",
+                "OYASUMI PODCAST: 眠れない夜に【Video】EP-306"
+            ],
+            links: {
+                spotify: "https://open.spotify.com/show/1gQ0ZdFpTOqiyLeOaCCn6U?si=5ac26d874acb45b1",
+                apple: "https://podcasts.apple.com/us/podcast/haru-no-nihongo/id1519563720",
+                ytMusic: "https://music.youtube.com/search?q=Haru+no+Nihongo"
+            },
+            hint: "Japanese"
+        },
+        {
+            key: "thinking",
+            title: "Thinking in Japanese",
+            image: "images/thikning.jpg",
+            listOfEpisodes: [
+                "A goal doesn't work without a plan ゴールはプランがないと役に立たない",
+                "The slower the better sometimes 遅いほうがいいこともある",
+                "Healthy boundaries save you and others 境界線はあなたもほかの人も助ける",
+                "Placebo effect is still effective even when you know it プラシーボは知ってても効果がある",
+                "Just a walk helps you think clearly 歩くのは考えをクリアにする",
+                "How to be healthier without changing what you eat 食べるものを変えないで健康になる方法",
+                "Eating order does matter 食べる順番は大切",
+                "Brain changes even in adulthood 脳は大人になっても変わる"
+            ],
+            links: {
+                spotify: "https://open.spotify.com/show/0lBMf4PEpcG7W44lG6ORKR?si=8c99a8af15804101",
+                apple: "https://podcasts.apple.com/us/podcast/thinking-in-japanese-podcast/id1485946726",
+                ytMusic: "https://music.youtube.com/search?q=Thinking+in+Japanese"
+            }, 
+            hint: "Japanese"
         },
         {
         key: "welcome",

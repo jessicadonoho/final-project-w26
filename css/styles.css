@@ -11,7 +11,7 @@
   --color-purple-darker: #1A0B1F;
   --color-purple-hover: #3E1248;
   --color-peach-hover: #FF8A6A;
-  --color-pink-dark: #BE3C81;
+  --color-pink-dark: #a3336f;
 
   /* whites and creams */
   --color-white: #FFFFFF;
@@ -54,7 +54,7 @@
   --color-link-hover: var(--color-primary-hover);
 
   /* genre marker */
-  --color-tag-bg: var(--color-pink);
+  --color-tag-bg: var(--color-pink-dark);
   --color-tag-text: var(--color-white);
 
   /* borders */
@@ -390,7 +390,7 @@ button img{
 }
 
 .collapsible {
-    background-color: var(--color-inactive);
+    background-color: var(--color-pink-dark);
     color: white;
     cursor: pointer;
     padding: 18px;
@@ -768,7 +768,7 @@ footer p{
   --color-link-hover: var(--color-peach-hover);
 
   /* genre markers */
-  --color-tag-bg: var(--color-pink);
+  --color-tag-bg: var(--color-pink-dark);
   --color-tag-text: var(--color-white);
 
   /* border */

@@ -120,13 +120,13 @@ let reset = document.querySelector("#reset")
 const recFormat = (podcast)=>{
   return (
       `
-          <li class="rec ${podcast.key}">
+          <div class="rec ${podcast.key}">
               <p>${podcast.title}</p>
               <img src=${podcast.image} alt="${podcast.name} logo"
               <a href="${podcast.spotifyLink}"><button>Spotify Link</button></a>
               <a href="${podcast.appleLink}"><button>Apple Link</button></a>
               <a href="${podcast.ytMusicLink}"><button>YouTube Music Link</button></a>
-          </li>
+          </div>
       `
   )
 }
