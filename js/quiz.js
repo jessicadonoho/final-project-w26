@@ -103,7 +103,7 @@ const recFormat = (num)=>{
     return (
         `
             <div class="rec">
-                <h2>${podcast[num].title}</h2>
+                <h3>${podcast[num].title}</h3>
                 <img src="${podcast[num].image}" alt="${podcast[num].title} logo"/>
                 <br>
                 <div class="links">
@@ -150,12 +150,8 @@ document.querySelector("#submit").addEventListener("click", (e)=>{
             scores[category2] += points2;
         }
     }
-    console.log(scores)
     let topCategory="";
     let highestScore=0;
-    console.log(topCategory)
-    console.log(highestScore)
-
 
     for (let category in scores) {
         if (scores[category] > highestScore) {

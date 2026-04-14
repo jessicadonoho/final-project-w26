@@ -114,11 +114,13 @@ const podcasts = [
   ];
 
 const checkboxes = document.querySelectorAll("input")
+let reset = document.querySelector("#reset")
+
 
 const recFormat = (podcast)=>{
   return (
       `
-          <li class="rec">
+          <li class="rec ${podcast.key}">
               <p>${podcast.title}</p>
               <img src=${podcast.image} alt="${podcast.name} logo"
               <a href="${podcast.spotifyLink}"><button>Spotify Link</button></a>
@@ -133,9 +135,36 @@ const insertHere = document.querySelector(".selected")
 
 for (let i=0; i<checkboxes.length; i++){
   checkboxes[i].addEventListener("click", (e)=>{
+    let podcast=podcasts.find(item=>item.key===checkboxes[i].id)
     if (checkboxes[i].checked){
-      let podcast=podcasts.find(item=>item.key===checkboxes[i].id)
       insertHere.innerHTML += recFormat(podcast)
+  } else{
+      if (document.querySelector(`.${podcast.key}`)){
+        document.querySelector(`.${podcast.key}`).remove();
+      };
   }
+  localStorage.setItem("selected", insertHere.innerHTML)
   })
 }
+
+reset.addEventListener("click", (e)=>{
+  localStorage.removeItem("selected")
+  for (let i=0; i<checkboxes.length; i++){
+    if (checkboxes[i].checked){
+      checkboxes[i].checked=false;
+    }
+  }
+  insertHere.innerHTML=""
+})
+
+window.addEventListener("load", (e)=>{
+  if (localStorage.getItem("selected")){
+    insertHere.innerHTML=localStorage.getItem("selected")
+    for (let i=0; i<checkboxes.length; i++){
+      checkboxes[i].checked=false
+      if (localStorage.getItem("selected").includes(checkboxes[i].id)){
+        document.querySelector(`#${checkboxes[i].id}`).checked=true;
+      }
+    }
+  }
+})

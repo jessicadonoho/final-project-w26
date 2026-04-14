@@ -27,6 +27,7 @@
   --color-inactive-text: var(--color-cream);
   --color-hover: var(--color-purple-dark);
   --color-hover-text: var(--color-cream);
+  --color-nav-border: var(--color-cream);
 
   /* Background */
   --color-bg: var(--color-cream);
@@ -58,6 +59,10 @@
 
   /* borders */
   --color-border: var(--color-border);
+
+  /*add question colors*/
+  --color-radio-bg: var(--color-white);
+  --color-radio-text: var(--color-pink-dark);
 }
 
 [data-theme="dark"] {
@@ -68,6 +73,7 @@
   --color-inactive-text: var(--color-cream);
   --color-hover: var(--color-purple-dark);
   --color-hover-text: var(--color-cream);
+  --color-nav-border:var(--color-purple-dark);
 
   /* background */
   --color-bg: var(--color-purple-darker);
@@ -99,6 +105,12 @@
 
   /* border */
   --color-border: rgba(255,255,255,0.1);
+
+  /*add question colors*/
+  --color-radio-bg: #5B4A5F;
+  --color-radio-text: var(--color-cream);
+  /* background-color: #5B4A5F;
+    color: var(--color-cream); */
 }
 
 /* Font */
@@ -168,6 +180,8 @@ header .logo{
 
 header nav{
   flex:1;
+  border-left: 2px black solid;
+  border-left-color: var(--color-nav-border);
 }
 
 header nav ul li{
@@ -193,7 +207,7 @@ header nav ul li a{
   color:var(--color-active-text)
 }
 
-header nav ul li a:hover{
+header nav ul li a:hover, header nav ul li a:focus{
   background-color: var(--color-hover);
   color: var(--color-hover-text);
 }
@@ -201,7 +215,8 @@ header nav ul li a:hover{
 h1{
   font-size: x-large;
   text-align: center;
-  padding: 5%;
+  padding: 1%;
+  text-wrap: wrap;
 }
 
 .toggle{
@@ -250,29 +265,51 @@ h3{
 }
 
 /* Index */
-.image-set{
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
-}
-.image-set img{
-  width: 100%;
-  border: var(--color-bg) 2px dashed;
-  margin: 2%;
-  border-radius: 10px;
-  object-fit: cover;
-  transform-origin: 0 0;
-  transition: transform .25s, visibility .25s ease-in;
-}
-.image-set img:hover{
-  transform: scale(1.05);
-}
 section img{
   width: 50%;
   grid-column: 1/-1;
   justify-self: center;
   margin: 2% 0;
 }
+.image-set{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+  justify-content: center;
+
+}
+
+/* .image-set{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  gap: 25px;
+  justify-content: center;
+} */
+.image-set img{
+  width: 100%;
+  height:100%;
+  border: var(--color-bg) 2px dashed;
+  border-radius: 10px;
+  object-fit: cover;
+  transform-origin: 0 0;
+  transition: transform .25s, visibility .25s ease-in;
+}
+
+.image-set .horiz:first-child{
+  grid-column: 1/span 1;
+}
+.image-set .vert{
+  grid-column: 2/span 1;
+}
+.image-set .horiz:last-child{
+  grid-column: 3/span 1;
+}
+
+.image-set img:hover{
+  transform: scale(1.05);
+}
+
 
 .sources ul{
   display: flex;
@@ -313,7 +350,7 @@ main li {
 }
 section ul{
   list-style-type: disc;
-  list-style-image: url('../favicons/flower.png');
+  list-style-image: url('/favicons/flower.png');
 }
 
 .podcast-tools{
@@ -416,6 +453,57 @@ legend {
   border-top-width: 2px;
 }
 
+.results{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.results h2{
+  width: 100%;
+}
+
+/* Guessing Game: */
+
+
+.guessOption{
+  justify-self: center;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+.tag{
+  text-wrap: none;
+  width: fit-content;
+  border-radius: 3px;
+  background-color: var(--color-tag-bg);
+  color: var(--color-tag-text);
+  width: fit-content;
+  font-size: x-small;
+  padding: 0 2px;
+  align-self: center;
+}
+.guessOption img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.guessAnswers{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-items: center;
+  gap: 10px;
+}
+
+.flexit{
+  justify-self: center;
+}
+
+.howto{
+  justify-content: center;
+  width:fit-content;
+  justify-self: center;
+}
 
 /* Questions */
 fieldset{
@@ -425,6 +513,9 @@ fieldset{
 
 input[type="radio"] {
   display: none;
+}
+.learn-more{
+  justify-self: center;
 }
 
 
@@ -437,11 +528,10 @@ input[type="radio"] {
   cursor: pointer;
   transition: all 1s ease;
   font-family: Arial, sans-serif;
-  background-color: var(--color-white);
-  color: var(--color-pink-dark);
+  background-color: var(--color-radio-bg);
+  color: var(--color-radio-text);
   font-family: "Sour Gummy";
 }
-
 
 .styled:hover {
   background: var(--color-active);
@@ -456,6 +546,10 @@ input[type="radio"]:checked + label {
   font-weight: 700;
 }
 
+.end{
+  grid-column: 1/-1;
+  justify-self: center;
+}
 
 .end input{
   padding: 10px 20px;
@@ -474,6 +568,7 @@ input[type="radio"]:checked + label {
   display: flex;
   flex-wrap: wrap;
   gap:20px;
+  justify-content: center;
 }
 
 .rec{
@@ -496,7 +591,9 @@ input[type="radio"]:checked + label {
 .rec img{
   border-radius: 10px;
   border: 4px black double;
-  border-color: var(--color-purple)
+  border-color: var(--color-purple);
+  width: 178px;
+  height: 178px;
 }
 .rec h2{
   background-color: var(--color-cream);
@@ -505,6 +602,12 @@ input[type="radio"]:checked + label {
   border-radius: 10px;
   margin: 10px 0 5px 0;
 }
+
+
+ol{
+  list-style-type: upper-alpha;
+}
+
 
 /* Footer */
 footer{
@@ -525,11 +628,13 @@ footer p{
   font-size: medium;
 }
 
+
 @media (min-width: 600px) {
   nav ul{
     display: flex;
     height: 120px;
   }
+
   nav ul li{
     width: 25%;
     height: 100%;
@@ -537,11 +642,140 @@ footer p{
     border-right: 2px solid white;
     border-right-color: var(--color-border);
     display:flex;
+    overflow: hidden;
   }
   nav ul li a{
     width:100%;
+    height: 100%;
     font-size: x-large;
+
+  }
+
+  .rankgroup{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .rank{
+    width:30%;
+    display:flex;
+    flex-direction: column;
+  }
+
+  .rank .add{
+    align-self: center;
+  }
+
+  .rank button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .collapsible img{
+    width: 80%;
+    align-self: center;
+  }
+  .decor{
+    width: 20%;
+  }
+
+  /* guessing game */
+  .guessOption{
+    width: 25%;
+  }
+
+  .guessEpisode{
+    position: sticky;
   }
 }
 
-/* MEdia Query reduce motion: */
+@media (min-width: 796px) {
+  .guessOption{
+    width: 10%;
+  }
+}
+
+@media (min-width: 926px) {
+  .image-set{
+    overflow: auto;
+    align-items: center;
+  }
+  .image-set .horiz{
+    width: auto;
+    height: 200px;
+  }
+  .image-set .vert{
+    width: 200px;
+  }
+}
+
+/* Media Query reduce motion: */
+@media (prefers-reduced-motion: reduce){
+  .image-set img:hover{
+    transform: scale(1);
+  }
+  .content{
+    transition: none;
+  }
+  .styled{
+    transition:none
+  }
+  .niftybutton-flickr{
+    transform: none;
+    transition: none;
+  }
+  .social-icons a{
+    transition: none !important;
+    /* write note about this */
+    /* transform:none !important; */
+  }
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+  :root{
+    /* Nav */
+  --color-active: var(--color-peach-hover);
+  --color-inactive: var(--color-pink);
+  --color-active-text: var(--color-purple-dark);
+  --color-inactive-text: var(--color-cream);
+  --color-hover: var(--color-purple-dark);
+  --color-hover-text: var(--color-cream);
+
+  /* background */
+  --color-bg: var(--color-purple-darker);
+  --color-surface: var(--color-purple-dark);
+  --color-box-bg: var(--color-purple);
+
+  /* text */
+  --color-text-primary: var(--color-cream);
+  --color-text-secondary: var(--color-muted-dark);
+
+  /* hover and accent */
+  --color-primary: var(--color-peach);
+  --color-primary-hover: var(--color-peach-hover);
+
+  --color-accent: var(--color-pink);
+
+  /* buttons */
+  --color-button-bg: var(--color-peach);
+  --color-button-text: var(--color-purple-darker);
+  --color-button-hover: var(--color-peach-hover);
+
+  /* links */
+  --color-link: var(--color-peach);
+  --color-link-hover: var(--color-peach-hover);
+
+  /* genre markers */
+  --color-tag-bg: var(--color-pink);
+  --color-tag-text: var(--color-white);
+
+  /* border */
+  --color-border: rgba(255,255,255,0.1);
+  }
+  .styled{
+    background-color: #5B4A5F;
+    color: var(--color-cream);
+  }
+}
