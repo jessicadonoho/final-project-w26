@@ -329,7 +329,7 @@ button{
   border-radius: 10px;
   font-size: medium;
 }
-button:hover{
+button:hover, button:focus{
   background-color: var(--color-button-hover);
 }
 
@@ -541,7 +541,7 @@ input[type="radio"] {
   font-family: "Sour Gummy";
 }
 
-.styled:hover {
+.styled:hover, .styled:focus{
   background: var(--color-active);
   color: var(--color-active-text)
 }
@@ -568,7 +568,7 @@ input[type="radio"]:checked + label {
   border-color: var(--color-border);
   cursor: pointer;
 }
-.end input:hover{
+.end input:hover, .end input:focus{
   background-color: var(--color-button-hover);
 }
 
