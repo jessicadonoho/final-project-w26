@@ -168,7 +168,7 @@ header{
   justify-content: center;
   flex-direction: row;
   align-items: flex-start;
-  border: var(--color-bg) 2px solid;
+  border: var(--color-nav-border) 2px solid;
 }
 
 header .logo{
@@ -185,7 +185,7 @@ header nav{
 }
 
 header nav ul li{
-  border-bottom: var(--color-bg) 2px solid;
+  border-bottom: var(--color-nav-border) 2px solid;
   /* background-color: var(--color-accent); */
   background-color: var(--color-inactive);
 }
@@ -401,7 +401,7 @@ button img{
     font-size: 15px;
   }
 
-  button .active, .collapsible:hover {
+  button .active, .collapsible:hover, .collapsible:focus {
     background-color: var(--color-hover);
   }
 
@@ -503,6 +503,14 @@ legend {
   justify-content: center;
   width:fit-content;
   justify-self: center;
+}
+
+.nextStep{
+  display:flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  align-content: center;
 }
 
 /* Questions */
@@ -632,7 +640,11 @@ footer p{
 @media (min-width: 600px) {
   nav ul{
     display: flex;
-    height: 120px;
+    height: 50px;
+  }
+  .flexor .logo{
+    height:50px;
+    width: auto;
   }
 
   nav ul li{
@@ -640,7 +652,7 @@ footer p{
     height: 100%;
     align-items: stretch;
     border-right: 2px solid white;
-    border-right-color: var(--color-border);
+    border-right-color: var(--color-nav-border);
     display:flex;
     overflow: hidden;
   }
@@ -655,6 +667,7 @@ footer p{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: flex-start;
   }
   .rank{
     width:30%;
@@ -777,5 +790,11 @@ footer p{
   .styled{
     background-color: #5B4A5F;
     color: var(--color-cream);
+  }
+}
+
+@media (min-width: 1250px) {
+  .rankgroup .rank{
+    width: 20%;
   }
 }

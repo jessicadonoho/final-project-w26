@@ -518,14 +518,6 @@ let answerKey=""
 let answer=""
 let giveUp=document.querySelector("#giveUp")
 
-// answers.innerHTML=podcastGameAI.map((podcast)=>
-//     (
-//        `<div tabindex="0" class="guessOption ${podcast.hint}" id=${podcast.key}>
-//             <img src=${podcast.image} alt="${podcast.name} logo"/>
-//             <p class="tag">${podcast.hint}</p>
-//         </div>`
-//     )
-// ).join("")
 
 giveUp.addEventListener("click", (e)=>{
     if (answer){
@@ -533,7 +525,6 @@ giveUp.addEventListener("click", (e)=>{
     } else {
         alert('You need to Start the game first')
     }
-    
 })
 
 start.addEventListener("click", (e)=>{
@@ -555,6 +546,7 @@ start.addEventListener("click", (e)=>{
 
     // establish options
     let options = document.querySelectorAll(".guessOption");
+
     //reset hint 
     options.forEach(opt => {
         let img = opt.querySelector("img");
@@ -573,11 +565,10 @@ start.addEventListener("click", (e)=>{
 
     const handleCoverClick = (options, option) =>{
         if (answerKey===option.id){
-            // gotIt=true;
             alert(`You got it!`);
             answers.innerHTML=""
             document.querySelector("#listen").innerHTML = `
-            <div>
+            <div class="nextStep">
                 <h3>You can listen to ${answer} here:</h3>
                 <div class="links">
                     <a href="${links.spotify}">
@@ -592,12 +583,6 @@ start.addEventListener("click", (e)=>{
                 </div>
             </div>
             `;
-            console.log(episode)
-            // options.forEach(opt => {
-            //     opt.style.pointerEvents = "none";
-            //     opt.setAttribute("tabindex", "-1")
-            //     start.preventDefault=false;
-            // });
         } else{
             alert("Keep trying!")
         }
