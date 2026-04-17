@@ -102,7 +102,7 @@ const podcastGameAI = [
         apple: "https://podcasts.apple.com/us/podcast/consider-this-from-npr/id1503226625",
         ytMusic: "https://music.youtube.com/library/podcasts?addrssfeed=https://feeds.npr.org/510355/podcast.xml"
         },
-        hint: "Short-Insight"
+        hint: "Deep-News"
     }, 
     {
         key: "yuyu",
@@ -122,7 +122,8 @@ const podcastGameAI = [
             spotify: "https://open.spotify.com/search/yuyu%20japanese%20podcast",
             apple: "https://podcasts.apple.com/us/podcast/yuyu-nihongo-podcast-japanese-podcast/id1480155677",
             ytMusic: "https://music.youtube.com/search?q=YUYUの日本語Podcast"
-          }
+          },
+          hint: "Japanese"
         },
         {
             key:"letstalk",
@@ -142,7 +143,8 @@ const podcastGameAI = [
                 spotify: "https://open.spotify.com/show/7rzB4zCdrSf67jd3nHm8Vy?si=f4eec3f71ed44ebb",
                 apple: "https://podcasts.apple.com/us/podcast/lets-talk-in-japanese/id1470844095",
                 ytMusic: "https://music.youtube.com/search?q=Let's+Talk+in+Japanese"
-            }
+            },
+            hint:"Japanese"
         },
         {
             key:"haruno",
@@ -301,7 +303,7 @@ start.addEventListener("click", (e)=>{
     answers.innerHTML=podcastGameAI.map((podcast)=>
         (
            `<div tabindex="0" class="guessOption ${podcast.hint}" id=${podcast.key}>
-                <img src=${podcast.image} alt="${podcast.name} logo"/>
+                <img src=${podcast.image} alt="${podcast.title} logo"/>
                 <p class="tag">${podcast.hint}</p>
             </div>`
         )

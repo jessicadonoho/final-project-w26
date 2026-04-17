@@ -537,7 +537,7 @@ legend {
   background-color: var(--color-tag-bg);
   color: var(--color-tag-text);
   width: fit-content;
-  font-size: x-small;
+  font-size: 11px;
   padding: 0 2px;
   align-self: center;
 }
