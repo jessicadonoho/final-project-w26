@@ -800,11 +800,11 @@ footer p{
     transform: none;
     transition: none;
   }
-  .social-icons a{
+  /* .social-icons a{
     transition: none !important;
-    /* write note about this */
-    /* transform:none !important; */
-  }
+    write note about this
+    transform:none !important;
+  } */
   .bubble{
     transition: none;
   }

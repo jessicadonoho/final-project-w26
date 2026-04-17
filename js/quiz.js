@@ -165,21 +165,6 @@ const recFormat = (num)=>{
         `
     )
 }
-// `
-//             <div class="rec">
-//                 <h3>${podcast[num].title}</h3>
-//                 <span class="tag">${podcast[num].genre}</span>
-//                 <span class="length>${podcast[num].length}</span>
-//                 <img src="${podcast[num].image}" alt="${podcast[num].title} logo"/>
-//                 <p>${podcast[num].description}</p>
-//                 <br>
-//                 <div class="links">
-//                     <a href="${podcast[num].spotifyLink}"><button>Spotify Link</button></a>
-//                     <a href="${podcast[num].appleLink}"><button>Apple Link</button></a>
-//                     <a href="${podcast[num].ytMusicLink}"><button>YouTube Music Link</button></a>
-//                 </div>
-//             </div>
-//         `
 
 
 let scores = {
@@ -215,6 +200,7 @@ document.querySelector("#submit").addEventListener("click", (e)=>{
             scores[category2] += points2;
         }
     }
+
     let topCategory="";
     let highestScore=0;
 
@@ -222,7 +208,6 @@ document.querySelector("#submit").addEventListener("click", (e)=>{
         if (scores[category] > highestScore) {
             highestScore = scores[category];
             topCategory = category;
-            console.log(highestScore, topCategory)
         }
     }
 
