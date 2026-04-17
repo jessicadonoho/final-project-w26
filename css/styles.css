@@ -203,7 +203,7 @@ header nav ul li a{
 .active a{
   font-weight: 700;
   background-color: var(--color-active);
-  color:var(--color-active-text)
+  color:var(--color-active-text);
 }
 
 header nav ul li a:hover, header nav ul li a:focus{
@@ -301,6 +301,10 @@ section img{
   transition: all 0.3s ease;
 }
 
+svg path{
+  fill:#fff;
+}
+
 /* .image-set{
   display: flex;
   flex-wrap: nowrap;
@@ -366,6 +370,10 @@ button:hover{
   gap: 10px;
 }
 
+iframe{
+  border-radius: 10px;
+}
+
 /* Credible */
 main li {
   margin-left: 20px;
@@ -421,25 +429,30 @@ button img{
     text-align: left;
     /* outline: 2px solid var(--color-accent); */
     font-size: 15px;
+    font-family: "Sour Gummy", sans-serif;
   }
 
-  button .active, .collapsible:hover, .collapsible:focus {
-    background-color: var(--color-hover);
-  }
+.collapsible img{
+  border-radius: 10px;
+}
 
-  .content {
-    padding: 0 18px;
-    max-height: 0;
-    overflow: auto;
-    transition: max-height 0.2s ease-out;
-    background-color: var(--color-inactive-text);
-    color:var(--color-hover);
-  }
+button .active, .collapsible:hover, .collapsible:focus {
+  background-color: var(--color-hover);
+}
 
-  .logo{
-    height:200px;
-    width:auto;
-  }
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: auto;
+  transition: max-height 0.2s ease-out;
+  background-color: var(--color-inactive-text);
+  color:var(--color-hover);
+}
+
+.logo{
+  height:200px;
+  width:auto;
+}
 
 
 form{
