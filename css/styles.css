@@ -3,7 +3,7 @@
   /* Inspo Colors */
   --color-cream: #FFF1D3;
   --color-peach: #FFB090;
-  --color-pink: #CA5995;
+  --color-pink: #ca5995;
   --color-purple: #5D1C6A;
 
   /* Adjusted accessible shades */
@@ -58,7 +58,7 @@
   --color-tag-text: var(--color-white);
 
   /* borders */
-  --color-border: var(--color-border);
+  --color-border: var(--color-active);
 
   /*add question colors*/
   --color-radio-bg: var(--color-white);
@@ -138,7 +138,6 @@
   font-variation-settings:
     "wdth" 100;
 }
-
 
 /* Skip to Main */
 .skip a{
@@ -397,7 +396,7 @@ button img{
     width: 100%;
     border: none;
     text-align: left;
-    outline: none;
+    /* outline: 2px solid var(--color-accent); */
     font-size: 15px;
   }
 
@@ -516,16 +515,26 @@ legend {
 /* Questions */
 fieldset{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width:100%;
 }
 
-input[type="radio"] {
-  display: none;
+.option{
+  display: flex;
+  width: 100%;
 }
+
+fieldset .question{
+  padding: 20px;
+}
+fieldset div{
+  justify-self: stretch;
+}
+
 .learn-more{
   justify-self: center;
 }
-
 
 .styled{
   padding: 12px 18px;
@@ -533,12 +542,16 @@ input[type="radio"] {
   border: 2px solid #ccc;
   border-color: var(--color-pink);
   border-radius: 12px;
+
   cursor: pointer;
+
   transition: all 1s ease;
-  font-family: Arial, sans-serif;
+  font-family: "Sour Gummy", Arial, sans-serif;
   background-color: var(--color-radio-bg);
   color: var(--color-radio-text);
-  font-family: "Sour Gummy";
+
+  width: 100%;
+
 }
 
 .styled:hover, .styled:focus{
@@ -546,6 +559,9 @@ input[type="radio"] {
   color: var(--color-active-text)
 }
 
+input[type="radio"]{
+  margin-left: 20px;
+}
 
 input[type="radio"]:checked + label {
   background: var(--color-inactive);
@@ -704,7 +720,7 @@ footer p{
 
 @media (min-width: 796px) {
   .guessOption{
-    width: 10%;
+    width: 13%;
   }
 }
 
@@ -795,6 +811,6 @@ footer p{
 
 @media (min-width: 1250px) {
   .rankgroup .rank{
-    width: 20%;
+    width: 17%;
   }
 }
