@@ -32,206 +32,293 @@
     </header>
     <main id="main">
         <form action="">
+            <h2>Podcast 4 U!</h2>
             <fieldset>
-                <legend>Podcast 4 U!</legend>
-                <p class="question">What are you in the mood for?</p>
-                    <input type="radio" id="q1a" name="q1" class = "answer"
-                        data-category="quickNews" data-points="1">
-                    <label class="styled" for="q1a">Stay informed fast</label><br>
+                <legend class="question">What are you in the mood for?</legend>
+                    <div class="option">
+                        <input type="radio" id="q1a" name="q1" class = "answer"
+                            data-category="quickNews" data-points="1">
+                        <label class="styled" for="q1a">Stay informed fast</label><br>
+                    </div>
 
-                    <input type="radio" id="q1b" name="q1" class = "answer"
-                        data-category="deepNews" data-points="1">
-                    <label class="styled" for="q1b">Understand something deeply</label><br>
+                    <div class="option">
+                        <input   type="radio" id="q1b" name="q1" class = "answer"
+                            data-category="deepNews" data-points="1">
+                        <label class="styled" for="q1b">Understand something deeply</label><br>
+                    </div>
 
-                    <input type="radio" id="q1c" name="q1" class = "answer"
-                        data-category="shortInsight" data-points="1">
-                    <label class="styled" for="q1c">Learn something new quickly</label><br>
+                    <div class="option">
+                        <input type="radio" id="q1c" name="q1" class = "answer"
+                            data-category="shortInsight" data-points="1">
+                        <label class="styled" for="q1c">Learn something new quickly</label><br>
+                    </div>
 
-                    <input type="radio" id="q1d" name="q1" class = "answer"
-                        data-category="culture" data-points="1">
-                    <label class="styled" for="q1d">Hear perspectives on society</label><br>
+                    <div class="option">
+                        <input type="radio" id="q1d" name="q1" class = "answer"
+                            data-category="culture" data-points="1">
+                        <label class="styled" for="q1d">Hear perspectives on society</label><br>
+                    </div>
 
-                    <input type="radio" id="q1e" name="q1" class = "answer"
-                        data-category="culture" data-points="1">
-                    <label class="styled" for="q1e">Escape into a story</label><br>
+                    <div class="option">
+                        <input type="radio" id="q1e" name="q1" class = "answer"
+                            data-category="culture" data-points="1">
+                        <label class="styled" for="q1e">Escape into a story</label><br>
+                    </div>
+                </fieldset>
 
-                <p class="question">What should be the vibe of your listening experience</p>
-                    <input type="radio" id="q2a" name="q2" class = "answer"
-                        data-category="story" data-points="1" data-category2="shortInsight" data-points="2">
-                    <label class="styled" for="q2a">Stress-free</label><br>
+                <fieldset>
+                <legend class="question">What should be the vibe of your listening experience</legend>
+                    <div class="option">
+                        <input type="radio" id="q2a" name="q2" class = "answer"
+                            data-category="story" data-points="1" data-category2="shortInsight" data-points2="2">
+                        <label   class="styled" for="q2a">Stress-free</label><br>
+                    </div>
 
-                    <input type="radio" id="q2b" name="q2" class = "answer"
-                        data-category="story" data-points="1" data-category2="culture" data-points2="1">
-                    <label class="styled" for="q2b">Exciting</label><br>
+                    <div class="option">
+                        <input type="radio" id="q2b" name="q2" class = "answer"
+                            data-category="story" data-points="1" data-category2="culture" data-points2="1">
+                        <label   class="styled" for="q2b">Exciting</label><br>
+                    </div>
 
-                    <input type="radio" id="q2c" name="q2" class = "answer"
-                        data-category="deepNews" data-points="1">
-                    <label class="styled" for="q2c">Conversational</label><br>
+                    <div class="option">
+                        <input type="radio" id="q2c" name="q2" class = "answer"
+                            data-category="deepNews" data-points="1">
+                        <label   class="styled" for="q2c">Conversational</label><br>
+                    </div>
 
-                    <input type="radio" id="q2d" name="q2" class = "answer"
-                        data-category="quickNews" data-points="2" data-category2="shortInsight" data-points2="1">
-                    <label class="styled" for="q2d">No-frills</label><br>
+                    <div class="option">
+                        <input type="radio" id="q2d" name="q2" class = "answer"
+                            data-category="quickNews" data-points="2" data-category2="shortInsight" data-points2="1">
+                        <label   class="styled" for="q2d">No-frills</label><br>
+                    </div>
 
-                    <input type="radio" id="q2e" name="q2" class = "answer"
-                        data-category="culture" data-points="2">
-                    <label class="styled" for="q2e">Open Minded</label><br>
+                    <div class="option">
+                        <input type="radio" id="q2e" name="q2" class = "answer"
+                            data-category="culture" data-points="2">
+                        <label   class="styled" for="q2e">Open Minded</label><br>
+                    </div>
+                </fieldset>
 
-                <p class="question">What's your preference in podcast length?</p>
-                    <input type="radio" id="q3a" name="q3" class = "answer"
-                    data-category="quickNews" data-points="3" data-category2="shortInsight" data-points2="1">
-                    <label class="styled" for="q3a">5 minutes</label><br>
+                 <fieldset>
+                     <legend class="question">What's your preference in podcast length? </legend>
+                        <div class="option">
+                            <input type="radio" id="q3a" name="q3" class = "answer"
+                            data-category="quickNews" data-points="3" data-category2="shortInsight" data-points2="1">
+                            <label   class="styled" for="q3a">5 minutes</label><br>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q3b" name="q3" class = "answer"
+                                data-category="shortInsight" data-points="2" data-category2="deepNews" data-points2="1">
+                            <label   class="styled" for="q3b">15 minutes</label><br>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q3c" name="q3" class = "answer"
+                                data-category="deepNews" data-points="2" data-category2="culture" data-points2="1">
+                            <label   class="styled" for="q3c">30 minutes</label><br>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q3d" name="q3" class = "answer"
+                                data-category="story" data-points="2">
+                            <label   class="styled" for="q3d">1 hour</label><br>
+                        </div>
+                    </fieldset>
 
-                    <input type="radio" id="q3b" name="q3" class = "answer"
-                        data-category="shortInsight" data-points="2" data-category2="deepNews" data-points2="1">
-                    <label class="styled" for="q3b">15 minutes</label><br>
+                 <fieldset>
+                     <legend class="question">When do you want to listen to a podcast? </legend>
+                        <div class="option">
+                            <input type="radio" id="q4a" name="q4" class = "answer"
+                            data-category="deepNews" data-points="2" data-category2="shortInsight" data-points2="1">
+                            <label class="styled" for="q4a">Morning Routine</label><br>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q4b" name="q4" class = "answer"
+                            data-category="deepNews" data-points="1" data-category2="culture" data-points2="1">
+                            <label class="styled" for="q4b">During my Commute</label><br>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q4c" name="q4" class = "answer"
+                            data-category="story" data-points="2" data-category2="culture" data-points2="2">
+                            <label class="styled" for="q4c">Doing Chores</label><br>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q4d" name="q4" class = "answer"
+                            data-category="shortInsight" data-points="2" data-category2="story" data-points2="1">
+                            <label class="styled" for="q4d">Evening Wind Down</label><br>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q4e" name="q4" class = "answer"
+                            data-category="deepNews" data-points="2" data-category2="story" data-points2="1">
+                            <label class="styled" for="q4e">Walking/Free time</label><br>
+                        </div>
+                    </fieldset>
 
-                    <input type="radio" id="q3c" name="q3" class = "answer"
-                        data-category="deepNews" data-points="2" data-category2="culture" data-points2="1">
-                    <label class="styled" for="q3c">30 minutes</label><br>
+                 <fieldset>
+                     <legend class="question">How do you feel about current events? </legend>
+                        <div class="option">
+                            <input type="radio" id="q5a" name="q5" class = "answer"
+                            data-category="quickNews" data-points="2" data-category2="deepNews" data-points2="1">
+                            <label   class="styled" for="q5a">I need frequent updates</label><br>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q5b" name="q5" class = "answer"
+                            data-category="deepNews" data-points="2" data-category2="shortInsight" data-points2="1">
+                            <label   class="styled" for="q5b">I want deeper understanding</label><br>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q5c" name="q5" class = "answer"
+                            data-category="shortInsight" data-points="2" data-category2="culture" data-points2="1">
+                            <label   class="styled" for="q5c">I care more about social impact</label><br>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q5d" name="q5" class = "answer"
+                            data-category="story" data-points="2" data-category2="culture" data-points2="1">
+                            <label   class="styled" for="q5d">I avoid the news</label><br>
+                        </div>
+                    </fieldset>
 
-                    <input type="radio" id="q3d" name="q3" class = "answer"
-                        data-category="story" data-points="2">
-                    <label class="styled" for="q3d">1 hour</label><br>
+                 <fieldset>
+                     <legend class="question">When engaging in fiction, what genre appeals to you most? </legend>
+                        <div class="option">
+                            <input type="radio" id="q6a" name="q6" class = "answer"
+                            data-category="story" data-points="2" data-category2="quickNews" data-points2="1">
+                            <label   class="styled" for="q6a">Crime, Police, Detective shows</label><br>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q6b" name="q6" class = "answer"
+                            data-category="culture" data-points="2" data-category2="story" data-points2="2">
+                            <label   class="styled" for="q6b">Drama</label><br>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q6c" name="q6" class = "answer"
+                            data-category="shortInsight" data-points="2">
+                            <label   class="styled" for="q6c">Political Drama</label><br>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q6d" name="q6" class = "answer"
+                            data-category="quickNews" data-points="2" data-category2="shortInsight" data-points2="1">
+                            <label   class="styled" for="q6d">Action</label><br>
+                        </div>
+                    </fieldset>
 
-                <p class="question">When do you want to listen to a podcast?</p>
-                    <input type="radio" id="q4a" name="q4" class = "answer"
-                    data-category="deepNews" data-points="2" data-category2="shortInsight" data-points2="1">
-                    <label class="styled" for="q4a">Morning Routine</label><br>
+                 <fieldset>
+                     <legend class="question">How often do you see yourself listening to podcasts? </legend>
+                        <div class="option">
+                            <input type="radio" id="q7a" name="q7" class = "answer"
+                            data-category="quickNews" data-points="2" data-category2="deepNews" data-points2="2">
+                            <label   class="styled" for="q7a">Daily Habit</label><br>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q7b" name="q7" class = "answer"
+                            data-category="culture" data-points="2" data-category2="shortInsight" data-points2="1">
+                            <label   class="styled" for="q7b">A few times a week</label><br>
+                        </div> 
+                        <div class="option">
+                            <input type="radio" id="q7c" name="q7" class = "answer"
+                            data-category="shortInsight" data-points="2" data-category2="story" data-points2="2">
+                            <label   class="styled" for="q7c">Occasionally</label><br>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q7d" name="q7" class = "answer"
+                            data-category="story" data-points="2" data-category2="quickNews" data-points2="1">
+                            <label   class="styled" for="q7d">When I'm in the mood</label><br>
+                        </div>
+                    </fieldset>
 
-                    <input type="radio" id="q4b" name="q4" class = "answer"
-                    data-category="deepNews" data-points="1" data-category2="culture" data-points2="1">
-                    <label class="styled" for="q4b">During my Commute</label><br>
+                 <fieldset>
+                     <legend class="question">When chatting with your friends, what comes up in conversation? </legend>
+                        <div class="option">
+                            <input type="radio" id="q8a" name="q8" class = "answer"
+                            data-category="culture" data-points="2">
+                            <label   class="styled" for="q8a">Personal Drama</label><br>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q8b" name="q8" class = "answer"
+                            data-category="deepNews" data-points="2">
+                            <label   class="styled" for="q8b">Recent News</label><br>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q8c" name="q8" class = "answer"
+                            data-category="story" data-points="2">
+                            <label   class="styled" for="q8c">Celebrity Drama</label><br>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q8d" name="q8" class = "answer"
+                            data-category="quickNews" data-points="2">
+                            <label   class="styled" for="q8d">School/Professional Interests</label><br>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q8e" name="q8" class = "answer"
+                            data-category="shortInsight" data-points="2">
+                            <label   class="styled" for="q8e">Philosophy</label><br>
+                        </div>
+                    </fieldset>
 
-                    <input type="radio" id="q4c" name="q4" class = "answer"
-                    data-category="story" data-points="2" data-category2="culture" data-points2="2">
-                    <label class="styled" for="q4c">Doing Chores</label><br>
+                 <fieldset>
+                     <legend class="question">How do you prefer information to unfold? </legend>
+                        <div class="option">
+                            <input type="radio" id="q9a" name="q9" class = "answer"
+                            data-category="quickNews" data-points="2" data-category2="shortInsight" data-points2="1">
+                            <label   class="styled" for="q9a">In quick highlights you can skim mentally</label><br>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q9b" name="q9" class = "answer"
+                            data-category="deepNews" data-points="2">
+                            <label   class="styled" for="q9b">Step-by-step explanations that build understanding</label><br>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q9c" name="q9" class = "answer"
+                            data-category="culture" data-points="2" data-category2="story" data-points2="1">
+                            <label   class="styled" for="q9c">Through people's experiences</label><br>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q9d" name="q9" class = "answer"
+                            data-category="story" data-points="2">
+                            <label class="styled" for="q9d">As a narrative with a clear beginning and end</label><br>
+                        </div>
+                    </fieldset>
 
-                    <input type="radio" id="q4d" name="q4" class = "answer"
-                    data-category="shortInsight" data-points="2" data-category2="story" data-points2="1">
-                    <label class="styled" for="q4d">Evening Wind Down</label><br>
+                 <fieldset>
+                     <legend class="question">What keeps you engaged the longest? </legend>
+                        <div class="option">
+                            <input type="radio" id="q10a" name="q10" class = "answer"
+                            data-category="shortInsight" data-points="2">
+                            <label   class="styled" for="q10a">Learning something I can immediately use</label><br>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q10b" name="q10" class = "answer"
+                            data-category="deepNews" data-points="2" data-category2="quickNews" data-points2="1">
+                            <label   class="styled" for="q10b">Following an unfolding situation</label><br>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q10c" name="q10" class = "answer"
+                            data-category="culture" data-points="2">
+                            <label   class="styled" for="q10c">Emotional or relatable conversations</label><br>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q10d" name="q10" class = "answer"
+                            data-category="story" data-points="2">
+                            <label   class="styled" for="q10d">Suspense or curiosity about what happens next</label><br>
+                        </div>
+                    </fieldset>
 
-                    <input type="radio" id="q4e" name="q4" class = "answer"
-                    data-category="deepNews" data-points="2" data-category2="story" data-points2="1">
-                    <label class="styled" for="q4e">Walking/Free time</label><br>
-
-                <p class="question">How do you feel about current events?</p>
-                    <input type="radio" id="q5a" name="q5" class = "answer"
-                    data-category="quickNews" data-points="2" data-category2="deepNews" data-points2="1">
-                    <label class="styled" for="q5a">I need frequent updates</label><br>
-
-                    <input type="radio" id="q5b" name="q5" class = "answer"
-                    data-category="deepNews" data-points="2" data-category2="shortInsight" data-points2="1">
-                    <label class="styled" for="q5b">I want deeper understanding</label><br>
-
-                    <input type="radio" id="q5c" name="q5" class = "answer"
-                    data-category="shortInsight" data-points="2" data-category2="culture" data-points2="1">
-                    <label class="styled" for="q5c">I care more about social impact</label><br>
-
-                    <input type="radio" id="q5d" name="q5" class = "answer"
-                    data-category="story" data-points="2" data-category2="culture" data-points2="1">
-                    <label class="styled" for="q5d">I avoid the news</label><br>
-
-                <p class="question">When engaging in fiction, what genre appeals to you most?</p>
-                    <input type="radio" id="q6a" name="q6" class = "answer"
-                    data-category="story" data-points="2" data-category2="quickNews" data-points2="1">
-                    <label class="styled" for="q6a">Crime, Police, Detective shows</label><br>
-
-                    <input type="radio" id="q6b" name="q6" class = "answer"
-                    data-category="culture" data-points="2" data-category2="story" data-points2="2">
-                    <label class="styled" for="q6b">Drama</label><br>
-
-                    <input type="radio" id="q6c" name="q6" class = "answer"
-                    data-category="shortInsight" data-points="2">
-                    <label class="styled" for="q6c">Political Drama</label><br>
-
-                    <input type="radio" id="q6d" name="q6" class = "answer"
-                    data-category="quickNews" data-points="2" data-category2="shortInsight" data-points2="1">
-                    <label class="styled" for="q6d">Action</label><br>
-
-                <p class="question">How often do you see yourself listening to podcasts?</p>
-                    <input type="radio" id="q7a" name="q7" class = "answer"
-                    data-category="quickNews" data-points="2" data-category2="deepNews" data-points2="2">
-                    <label class="styled" for="q7a">Daily Habit</label><br>
-
-                    <input type="radio" id="q7b" name="q7" class = "answer"
-                    data-category="culture" data-points="2" data-category2="shortInsight" data-points2="1">
-                    <label class="styled" for="q7b">A few times a week</label><br>
-
-                    <input type="radio" id="q7c" name="q7" class = "answer"
-                    data-category="shortInsight" data-points="2" data-category2="story" data-points2="2">
-                    <label class="styled" for="q7c">Occasionally</label><br>
-
-                    <input type="radio" id="q7d" name="q7" class = "answer"
-                    data-category="story" data-points="2" data-category2="quickNews" data-points2="1">
-                    <label class="styled" for="q7d">When I'm in the mood</label><br>
-
-                <p class="question">When chatting with your friends, what comes up in conversation?</p>
-                    <input type="radio" id="q8a" name="q8" class = "answer"
-                    data-category="culture" data-points="2">
-                    <label class="styled" for="q8a">Personal Drama</label><br>
-
-                    <input type="radio" id="q8b" name="q8" class = "answer"
-                    data-category="deepNews" data-points="2">
-                    <label class="styled" for="q8b">Recent News</label><br>
-
-                    <input type="radio" id="q8c" name="q8" class = "answer"
-                    data-category="story" data-points="2">
-                    <label class="styled" for="q8c">Celebrity Drama</label><br>
-
-                    <input type="radio" id="q8d" name="q8" class = "answer"
-                    data-category="quickNews" data-points="2">
-                    <label class="styled" for="q8d">School/Professional Interests</label><br>
-
-                    <input type="radio" id="q8e" name="q8" class = "answer"
-                    data-category="shortInsight" data-points="2">
-                    <label class="styled" for="q8e">Philosophy</label><br>
-
-                <p class="question">How do you prefer information to unfold?</p>
-                    <input type="radio" id="q9a" name="q9" class = "answer"
-                    data-category="quickNews" data-points="2" data-category2="shortInsight" data-points2="1">
-                    <label class="styled" for="q9a">In quick highlights you can skim mentally</label><br>
-
-                    <input type="radio" id="q9b" name="q9" class = "answer"
-                    data-category="deepNews" data-points="2">
-                    <label class="styled" for="q9b">Step-by-step explanations that build understanding</label><br>
-
-                    <input type="radio" id="q9c" name="q9" class = "answer"
-                    data-category="culture" data-points="2" data-category2="story" data-points2="1">
-                    <label class="styled" for="q9c">Through people's experiences</label><br>
-
-                    <input type="radio" id="q9d" name="q9" class = "answer"
-                    data-category="story" data-points="2">
-                    <label class="styled" for="q9d">As a narrative with a clear beginning and end</label><br>
-
-                <p class="question">What keeps you engaged the longest?</p>
-                    <input type="radio" id="q10a" name="q10" class = "answer"
-                    data-category="shortInsight" data-points="2">
-                    <label class="styled" for="q10a">Learning something I can immediately use</label><br>
-
-                    <input type="radio" id="q10b" name="q10" class = "answer"
-                    data-category="deepNews" data-points="2" data-category2="quickNews" data-points2="1">
-                    <label class="styled" for="q10b">Following an unfolding situation</label><br>
-
-                    <input type="radio" id="q10c" name="q10" class = "answer"
-                    data-category="culture" data-points="2">
-                    <label class="styled" for="q10c">Emotional or relatable conversations</label><br>
-
-                    <input type="radio" id="q10d" name="q10" class = "answer"
-                    data-category="story" data-points="2">
-                    <label class="styled" for="q10d">Suspense or curiosity about what happens next</label><br>
-
-                <p class="question">What kind of mental effort are you up for right now?</p>
-                    <input type="radio" id="q11a" name="q11" class = "answer"
-                    data-category="quickNews" data-points="2" data-category2="story" data-points2="1">
-                    <label class="styled" for="q11a">Minimal: I just want to absorb things easily</label><br>
-
-                    <input type="radio" id="q11b" name="q11" class = "answer"
-                    data-category="shortInsight" data-points="2" data-category2="culture" data-points2="1">
-                    <label class="styled" for="q11b">Moderate: something engaging but not heavy</label><br>
-
-                    <input type="radio" id="q11c" name="q11" class = "answer"
-                    data-category="deepNews" data-points="2">
-                    <label class="styled" for="q11c">High—I want to think deeply and reflect</label><br>
+                 <fieldset>
+                     <legend class="question">What kind of mental effort are you up for right now? </legend>
+                        <div class="option">
+                            <input type="radio" id="q11a" name="q11" class = "answer"
+                            data-category="quickNews" data-points="2" data-category2="story" data-points2="1">
+                            <label   class="styled" for="q11a">Minimal: I just want to absorb things easily</label><br>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q11b" name="q11" class = "answer"
+                            data-category="shortInsight" data-points="2" data-category2="culture" data-points2="1">
+                            <label   class="styled" for="q11b">Moderate: something engaging but not heavy</label><br>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q11c" name="q11" class = "answer"
+                            data-category="deepNews" data-points="2">
+                            <label   class="styled" for="q11c">High—I want to think deeply and reflect</label><br>
+                        </div>
+                    </fieldset>
 
                 <div class="end">
                     <input id="submit" type="submit" value="Submit">
