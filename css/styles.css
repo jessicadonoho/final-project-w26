@@ -100,7 +100,7 @@
   --color-link-hover: var(--color-peach-hover);
 
   /* genre markers */
-  --color-tag-bg: var(--color-pink);
+  --color-tag-bg: var(--color-pink-dark);
   --color-tag-text: var(--color-white);
 
   /* border */
@@ -276,6 +276,29 @@ section img{
   gap: 25px;
   justify-content: center;
 
+}
+
+.discovery{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+.discovery h2{
+  width:100%;
+}
+.tip{
+  background-color: var(--color-white);
+  color:var(--color-pink-dark);
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 2px solid black;
+  border-color: var(--color-pink-dark);
+}
+
+.bubble{
+  transition: all 0.3s ease;
 }
 
 /* .image-set{
@@ -459,6 +482,30 @@ legend {
 }
 .results h2{
   width: 100%;
+}
+.result{
+  display:flex;
+  gap:.3em;
+}
+
+.tags{
+  display: flex;
+  gap:.3em;
+}
+
+.desc{
+  width: 70%;
+}
+
+.rec{
+  color:var(--color-purple-dark);
+  width: 45%;
+  text-align: center;
+}
+
+.rec button{
+  border-color: #1A0B1F;
+  margin-top: 20px;
 }
 
 /* Guessing Game: */
@@ -757,6 +804,9 @@ footer p{
     transition: none !important;
     /* write note about this */
     /* transform:none !important; */
+  }
+  .bubble{
+    transition: none;
   }
 }
 
