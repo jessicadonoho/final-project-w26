@@ -315,8 +315,9 @@ start.addEventListener("click", (e)=>{
     //reset hint 
     options.forEach(opt => {
         let img = opt.querySelector("img");
-        opt.style.filter="grayscale(0)";
-        img.style.border="0px";
+        // opt.style.filter="grayscale(0)";
+        // img.style.border="0px";
+        img.style.display="inline"
     })
 
     const randomNumber = Math.floor(Math.random() * 13);
@@ -370,10 +371,12 @@ start.addEventListener("click", (e)=>{
         let options = document.querySelectorAll(".guessOption");
         for (let i=0; i<options.length;i++){
             if (!options[i].classList.contains(hintContent)){
-                options[i].style.filter="grayscale(1)";
+                // options[i].style.filter="grayscale(1)";
+                // EDITTING
+                options[i].style.display="none";
             } else{
                 let img = options[i].querySelector("img");
-                img.style.border="green 5px solid"
+                // img.style.border="green 5px solid"
             }
         }
     })
