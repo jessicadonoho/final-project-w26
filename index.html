@@ -26,17 +26,20 @@
                     <li><a href = "guessing.html">Guessing Game</a></li>
                     <li><a href= "recommend.html">Podcast 4 U!</a></li>
                 </ul>
+            </nav>
         </div>
-        </nav>
       <h1>Welcome to Jess' Listening Hub!</h1>
       <img tabindex= 0 class="toggle" src="favicons/dark.png" alt="toggle dark mode">
     </header>
     <main id="main">
-    <section class="image-set">
+    <section >
+        <h2>My Inspo</h2>
         <!-- css for hover effect inspired by https://w3bits.com/css-image-hover-zoom/  -->
-        <img class="horiz" src="images/grass.jpg" alt="person lying in grass listening to headphones">
-        <img class="vert" src="images/gorg.jpg" alt="person in dramatic lighting listening to earbuds">
-        <img class="horiz" src="images/drama.jpg" alt="person in field of wheat listening to earbuds">
+        <div class="image-set">
+            <img class="horiz" src="images/grass.jpg" alt="person lying in grass listening to headphones">
+            <img class="vert" src="images/gorg.jpg" alt="person in dramatic lighting listening to earbuds">
+            <img class="horiz" src="images/drama.jpg" alt="person in field of wheat listening to earbuds">
+        </div>
     </section>
     <section class="faq">
         <h2>Frequently Asked Questions</h2>
@@ -68,28 +71,28 @@
         <p>There are many different tools and apps to listen to podcasts. Here are some of the most common:</p>
         <ul class="podcast-tools">
             <li>
-                <a href="https://podcasts.apple.com/us/new" class="podcast_source apple">
-                    <button>Apple Podcasts</button>
+                <a href="https://podcasts.apple.com/us/new" class="podcast_source apple button">
+                    Apple Podcasts
                 </a>
             </li>
             <li>
-                    <a href="https://open.spotify.com/genre/podcasts-web" class="podcast_source spotify">
-                        <button>Spotify</button>
+                    <a href="https://open.spotify.com/genre/podcasts-web" class="podcast_source spotify button">
+                        Spotify
                     </a>
             </li>
             <li>
-                    <a href="https://music.amazon.com/podcasts"class="podcast_source amazon">
-                        <button>Amazon Music</button>
+                    <a href="https://music.amazon.com/podcasts"class="podcast_source amazon button">
+                        Amazon Music
                     </a>
             </li>
             <li>
-                    <a href="https://music.youtube.com/podcasts" class="podcast_source youtube">
-                        <button>Youtube Music</button>
+                    <a href="https://music.youtube.com/podcasts" class="podcast_source youtube button">
+                        Youtube Music
                     </a>
             </li>
             <li>
-                    <a href="https://www.iheart.com/podcast" class="podcast_source iheart">
-                        <button>iHeart Radio</button>
+                    <a href="https://www.iheart.com/podcast" class="podcast_source iheart button">
+                        iHeart Radio
                     </a>
             </li>
         </ul>
@@ -109,12 +112,6 @@
                     <div class="spotify">
                         <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/show/1VoAfPc2yXoHcTrMw8Akim?utm_source=generator" width="300" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                     </div>
-                    <div class="youtube">
-                        <iframe width="300" height="152" src="https://www.youtube.com/embed/videoseries?si=8i1TLSZn6NMJNIHT&amp;list=PLqwCKO-G74xxLFLioRARemfZAoaVncySQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-                    <div>
-                        <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="152" style="width:300;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.podcasts.apple.com/us/podcast/wandagate-soccer-player-grows-up-idolizing-star-player/id1763891818?i=1000758038986"></iframe>
-                    </div>
                 </div>
             </li>
             <li>
@@ -127,9 +124,6 @@
                     <div class="spotify">
                         <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/show/2mTUnDkuKUkhiueKcVWoP0?utm_source=generator" width="300" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                     </div>
-                    <div class="apple">
-                        <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="152" style="width:300;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.podcasts.apple.com/us/podcast/the-americans-caught-in-ices-web-of-surveillance/id1222114325?i=1000759111087"></iframe>
-                    </div>
                 </div>
             </li>
             <li>
@@ -141,12 +135,6 @@
                 <div class="embeds">
                     <div class="spotify">
                         <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/show/0hQDsR0brfk88Nls8fydo4?utm_source=generator" width="300" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                    </div>
-                    <div class="youtube">
-                        <iframe width="300" height="152" src="https://www.youtube.com/embed/GMICGZX3WYY?si=MqLwezL8B9wHDhFS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-                    <div class="apple">
-                        <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="152" style="width:300;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.podcasts.apple.com/us/podcast/vol-435-%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A%E8%AA%9E%E3%81%AF%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%82%92%E8%B1%8A%E3%81%8B%E3%81%AB%E3%81%99%E3%82%8B%E3%81%8B-%E6%AD%B4%E5%8F%B2%E7%B7%A8-japanese-radio-for-listening/id1480155677?i=1000754224914"></iframe>
                     </div>
                 </div>
             </li>

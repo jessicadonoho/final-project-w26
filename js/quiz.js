@@ -148,7 +148,7 @@ const recFormat = (num)=>{
         `
             <div class="rec">
                 <h3>${podcast[num].title}</h3>
-                <img src="${podcast[num].image}" alt="${podcast[num].title} logo"/>
+                <img src="${podcast[num].image}" alt="${podcast[num].title} cover">
                 <div class="tags">
                     <p class="tag">${podcast[num].genre}</p>
                     <p class="tag">${podcast[num].length}</p>

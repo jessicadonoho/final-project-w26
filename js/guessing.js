@@ -303,7 +303,7 @@ start.addEventListener("click", (e)=>{
     answers.innerHTML=podcastGameAI.map((podcast)=>
         (
            `<div tabindex="0" class="guessOption ${podcast.hint}" id=${podcast.key}>
-                <img src=${podcast.image} alt="${podcast.title} logo"/>
+                <img src=${podcast.image} alt="${podcast.title} cover"/>
                 <p class="tag">${podcast.hint}</p>
             </div>`
         )
